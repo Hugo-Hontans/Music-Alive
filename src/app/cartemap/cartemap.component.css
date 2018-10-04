@@ -1,0 +1,17 @@
+      .map {
+        margin:auto;
+        border: 1px solid black;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .3);
+      }
+    @media(max-width:768px){
+       .map {
+           width:100vw;
+           height:35vw;
+       } 
+    }
+    @media(min-width:769px){
+        .map {
+            width:52vw;
+            height:25vw;
+        }
+    }
