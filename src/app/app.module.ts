@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { EventlistComponent } from './eventlist/eventlist.component';
+import { SearchbarComponent } from './searchbar/searchbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EventlistComponent
+    EventlistComponent,
+    SearchbarComponent
   ],
   imports: [
     BrowserModule
