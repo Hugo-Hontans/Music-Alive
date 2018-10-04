@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CartemapComponent } from './cartemap/cartemap.component';
+import { EventlistComponent } from './eventlist/eventlist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CartemapComponent
+    CartemapComponent,
+    EventlistComponent
   ],
   imports: [
     BrowserModule
