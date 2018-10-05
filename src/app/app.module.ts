@@ -10,7 +10,6 @@ import { EventlistComponent } from './eventlist/eventlist.component';
     AppComponent,
     CartemapComponent,
     EventlistComponent,
-    SearchbarComponent
   ],
   imports: [
     BrowserModule
