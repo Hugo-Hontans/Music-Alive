@@ -1,0 +1,40 @@
+.logo{
+    width: 5%;
+    padding-left: 2%;
+    padding-top: 1%;
+}
+.pad{
+    padding-left: 2%;
+}
+
+input{
+   text-align:center;
+}
+.backgrounded{
+    background-image: url(/src/assets/img/background.jpg);
+    background-size: cover;
+}
+.had{
+    background-image: url(/src/assets/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 15%;
+}
+
+h1{
+    text-align:center;
+    color: whitesmoke;
+    padding-bottom: 4%;
+    padding-top: 12%;
+}
+.btn-outline-primary{
+    background-color:green;
+    background-image: url(/src/assets/img/search.png);
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+}
+.searchbarstick{
+    padding-top: 1%;
+}
