@@ -71,4 +71,5 @@
   .stickytop {
       position: -webkit-sticky;
       position: sticky;
+      top: 3%;
   }
