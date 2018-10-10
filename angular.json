@@ -26,8 +26,8 @@
               "src/styles.css"
             ],
             "scripts": [
-              "../node_modules/jquery/dist/jquery.min.js",
-              "../node_modules/bootstrap/dist/js/bootstrap.js"
+              "../lyon-0918-java3-festmap/node_modules/jquery/dist/jquery.min.js",
+              "../lyon-0918-java3-festmap/node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
           "configurations": {
