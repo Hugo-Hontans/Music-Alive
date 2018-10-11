@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { ItemsComponent } from './items/items.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     EventlistComponent,
     FooterComponent,
     ContentComponent,
+    ItemsComponent,
   ],
   imports: [
     BrowserModule,
