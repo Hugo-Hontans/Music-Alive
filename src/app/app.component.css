@@ -3,9 +3,7 @@
     display:none;
   }
 }
-.spa{
-  background-image: url(../assets/img/background.jpg)
-}
+
 .logo{
     z-index: 3;
     position: -webkit-sticky;
@@ -38,7 +36,8 @@
     height: 60px;
     background: #2b303b;
     border: none;
-    font-size: 10pt;
+    font-size: 15pt;
+    text-align:center;
     float: left;
     color: #fff;
     padding-left: 15px;
