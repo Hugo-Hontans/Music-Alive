@@ -12,7 +12,7 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
   title = 'easy-musique';
   response;
-  private apiUrl = 'https://api.songkick.com/api/3.0/search/artists.json?apikey=jGIjCGirpGWFCCqb&query=';
+  private apiUrl = 'https://api.songkick.com/api/3.0/events.json?apikey=jGIjCGirpGWFCCqb&artist_name=';
   constructor (private http: HttpClient ) {}
   search(form: NgForm) {
     const artist: string = form.value['artist'];
@@ -20,7 +20,6 @@ export class AppComponent {
       this.response = data;
       console.log(data);
     });
-
   }
 }
 
