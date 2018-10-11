@@ -6,7 +6,8 @@ import { CartemapComponent } from './cartemap/cartemap.component';
 import { EventlistComponent } from './eventlist/eventlist.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
-import {HttpModule} from '@angular/http';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import {HttpModule} from '@angular/http';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
