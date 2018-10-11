@@ -2,7 +2,7 @@
 <img class="logo" src="../../assets/img/logo.png">
 <div class=" box container-4 sticky-top">
     <form (ngSubmit)="search(f)" #f="ngForm">
-    <input type="search" id="search" placeholder="Search for artist" name="artist" ngModel required/>
+    <input type="search" id="search" placeholder="Search for events" name="artist" ngModel required/>
     <button type="submit" [disabled]="f.invalid" class="icon"><i class="fa fa-search"></i></button>
     </form>
 </div>
