@@ -1,3 +1,11 @@
-<ul>
-  <app-event-item *ngFor="let v of objetTest.resultsPage.results.event;let i=index" [index]="i" [oneEvent]="v"></app-event-item>
-</ul>
+<div class="container-fluid d-flex justify-content-center">
+
+  <ul class="list-group col-12 col-sm-12col-md-12 col-lg-8 ">
+
+    <app-event-item *ngFor="let v of objetTest.resultsPage.results.event;let i=index" [index]="i" [oneEvent]="v"></app-event-item>
+
+
+
+  </ul>
+
+</div>
