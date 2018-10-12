@@ -9,6 +9,7 @@ import { ContentComponent } from './content/content.component';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { EventItemComponent } from './event-item/event-item.component';
+import { Input } from '@angular/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,6 @@ import { EventItemComponent } from './event-item/event-item.component';
     EventlistComponent,
     FooterComponent,
     ContentComponent,
-    ItemsComponent,
     EventItemComponent
   ],
   imports: [

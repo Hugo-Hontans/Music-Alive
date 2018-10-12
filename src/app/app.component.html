@@ -5,13 +5,12 @@
     <input type="search" id="search" placeholder="Search for events" name="artist" ngModel required/>
     <button type="submit" [disabled]="f.invalid" class="icon"><i class="fa fa-search"></i></button>
     </form>
-  <app-eventlist [objetTest]="objetTest"></app-eventlist>
 </div>
 
 
 
 <div class='content'>
-<app-content></app-content>
+<app-content [data]="response" [performed]="performed"></app-content>
 <app-footer></app-footer>
 </div>
 </div>
