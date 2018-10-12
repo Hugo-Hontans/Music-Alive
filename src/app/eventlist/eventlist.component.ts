@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-eventlist',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./eventlist.component.css']
 })
 export class EventlistComponent implements OnInit {
+  @Input()
+  objetTest;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    console.log(this.objetTest);
   }
-
 }

@@ -8,7 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
-import { ItemsComponent } from './items/items.component';
+import { EventItemComponent } from './event-item/event-item.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +17,7 @@ import { ItemsComponent } from './items/items.component';
     FooterComponent,
     ContentComponent,
     ItemsComponent,
+    EventItemComponent
   ],
   imports: [
     BrowserModule,
@@ -27,4 +28,4 @@ import { ItemsComponent } from './items/items.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

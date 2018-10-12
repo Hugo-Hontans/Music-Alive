@@ -1,0 +1,9 @@
+// https://www.songkick.com/developer/event-search
+{
+  "resultsPage": {
+    "status": "error",
+    "error": {
+      "message": "This resource must be given a filter, such as 'artist_name' or 'location'."
+    }
+  }
+}

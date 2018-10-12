@@ -1,0 +1,92 @@
+// https://www.songkick.com/developer/venue-search
+{
+  "resultsPage": {
+    "status": "ok",
+    "results": {
+      "venue": [
+        {
+          "description": "",
+          "city": {
+            "country": { "displayName": "US" },
+            "displayName": "Akron",
+            "state": { "displayName": "OH" },
+            "uri": "http://www.songkick.com/metro_areas/2374-us-akron?utm_source=51137&utm_medium=partner",
+            "id": 2374
+          },
+          "displayName": "Venuename",
+          "street": "784 W. Market St.",
+          "website": null,
+          "zip": "44303",
+          "capacity": null,
+          "lat": 41.0961337,
+          "phone": null,
+          "lng": -81.5426224,
+          "uri": "http://www.songkick.com/venues/1841668-venuename?utm_source=51137&utm_medium=partner",
+          "id": 1841668,
+          "metroArea": {
+            "country": { "displayName": "US" },
+            "displayName": "Akron",
+            "state": { "displayName": "OH" },
+            "uri": "http://www.songkick.com/metro_areas/2374-us-akron?utm_source=51137&utm_medium=partner",
+            "id": 2374
+          }
+        },
+        {
+          "phone": null,
+          "lat": 44.6488625,
+          "street": "",
+          "lng": -63.5753196,
+          "zip": "",
+          "description": "",
+          "website": null,
+          "capacity": null,
+          "uri": "http://www.songkick.com/venues/2556794-venue-name?utm_source=51137&utm_medium=partner",
+          "id": 2556794,
+          "displayName": "Venue Name",
+          "city": {
+            "country": { "displayName": "Canada" },
+            "uri": "http://www.songkick.com/metro_areas/27366-canada-halifax?utm_source=51137&utm_medium=partner",
+            "id": 27366,
+            "state": { "displayName": "NS" },
+            "displayName": "Halifax"
+          },
+          "metroArea": {
+            "country": { "displayName": "Canada" },
+            "uri": "http://www.songkick.com/metro_areas/27366-canada-halifax?utm_source=51137&utm_medium=partner",
+            "id": 27366,
+            "state": { "displayName": "NS" },
+            "displayName": "Halifax"
+          }
+        },
+        {
+          "website": null,
+          "city": {
+            "country": { "displayName": "US" },
+            "displayName": "Williamsburg",
+            "state": { "displayName": "VA" }
+          },
+          "metroArea": {
+            "country": { "displayName": "US" },
+            "displayName": "Newport News",
+            "uri": "http://www.songkick.com/metro_areas/6329-us-newport-news?utm_source=51137&utm_medium=partner",
+            "id": 6329,
+            "state": { "displayName": "VA" }
+          },
+          "zip": "23188",
+          "description": "",
+          "capacity": null,
+          "displayName": "This Is the Venue Name",
+          "lat": 37.2830523,
+          "phone": null,
+          "uri": "http://www.songkick.com/venues/3541639-this-is-the-venue-name?utm_source=51137&utm_medium=partner",
+          "lng": -76.7472,
+          "street": "4919 Ercil Way",
+          "id": 3541639
+        }
+      ]
+    },
+    "perPage": 50,
+    "page": 1,
+    "totalEntries": 3
+  }
+}
