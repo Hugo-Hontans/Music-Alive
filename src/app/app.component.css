@@ -2,8 +2,22 @@
   .logo{
     display:none;
   }
+  .box{
+    margin: 0px auto;
+  }
 }
-
+@media screen and (min-width: 769px){
+  .box{
+    margin: 100px auto;
+  }
+}
+.spa {
+  background-image: url(../assets/img/background3.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .logo{
     z-index: 3;
     position: -webkit-sticky;
@@ -18,7 +32,6 @@
 }
 .box{
     z-index: 3;
-    margin: 100px auto;
     width: 600px;
     height: 60px;
   }
@@ -48,17 +61,17 @@
   .container-4 input#search::-webkit-input-placeholder {
     color: #65737e;
  }
-  
+
  .container-4 input#search:-moz-placeholder { /* Firefox 18- */
-    color: #65737e;  
+    color: #65737e;
  }
-  
+
  .container-4 input#search::-moz-placeholder {  /* Firefox 19+ */
-    color: #65737e;  
+    color: #65737e;
  }
-  
- .container-4 input#search:-ms-input-placeholder {  
-    color: #65737e;  
+
+ .container-4 input#search:-ms-input-placeholder {
+    color: #65737e;
  }
  .container-4 button.icon{
     -webkit-border-top-right-radius: 5px;
@@ -67,7 +80,7 @@
     -moz-border-radius-bottomright: 5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-   
+
     border: none;
     background: #232833;
     height: 60px;
@@ -75,7 +88,7 @@
     color: #4f5b66;
     opacity: 0;
     font-size: 10pt;
-   
+
     -webkit-transition: all .55s ease;
     -moz-transition: all .55s ease;
     -ms-transition: all .55s ease;
@@ -87,7 +100,7 @@
     opacity: 1;
     margin-left: -60px;
   }
- 
+
   .container-4:hover button.icon:hover{
     background: white;
   }
