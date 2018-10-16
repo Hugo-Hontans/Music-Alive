@@ -1,27 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
-@Component({
+@Component ({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+@Injectable()
 export class AppComponent {
+  performed = false;
   title = 'easy-musique';
-}
-
-
-const path="https://api.songkick.com/api/3.0/search/artists.json?apikey=";
-const pathcomp="&query="
-const apiKey="ZHKVrD2Nr66ufY7q";
-let artist="";
-let acces="";
-function getEvents(){
-  artist = (<HTMLInputElement>document.getElementById("artist")).value;
-  acces = path + apiKey + pathcomp + artist;
-  fetch(acces)
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById("venue").innerHTML = data.resultPage.results.artist.uri;
-      })
-  .catch(error => console.error(error))
+  response;
+  private apiUrl = 'https://api.songkick.com/api/3.0/events.json?apikey=jGIjCGirpGWFCCqb&artist_name=';
+  constructor (private http: HttpClient ) {}
+  search(form: NgForm) {
+    this.performed = true;
+    const artist: string = form.value['artist'];
+    this.http.get(this.apiUrl + artist).subscribe( (data) => {
+      this.response = data;
+      console.log(data);
+    });
+  }
 }

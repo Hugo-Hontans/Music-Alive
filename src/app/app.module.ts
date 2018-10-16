@@ -1,36 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CartemapComponent } from './cartemap/cartemap.component';
 import { EventlistComponent } from './eventlist/eventlist.component';
-
+import { FooterComponent } from './footer/footer.component';
+import { ContentComponent } from './content/content.component';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+import { EventItemComponent } from './event-item/event-item.component';
+import { Input } from '@angular/core';
 @NgModule({
   declarations: [
     AppComponent,
     CartemapComponent,
     EventlistComponent,
+    FooterComponent,
+    ContentComponent,
+    EventItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
-
-const path="https://api.songkick.com/api/3.0/search/artists.json?apikey=";
-const pathcomp="&query="
-const apiKey="ZHKVrD2Nr66ufY7q";
-let artist="";
-let acces="";
-function getEvents(){
-  artist = (<HTMLInputElement>document.getElementById("artist")).value;
-  acces = path + apiKey + pathcomp + artist;
-  fetch(acces)
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById("venue").innerHTML = data.resultPage.results.artist.uri;
-      })
-  .catch(error => console.error(error))
-}
+export class AppModule {}

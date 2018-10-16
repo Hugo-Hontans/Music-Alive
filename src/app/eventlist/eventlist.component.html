@@ -1,29 +1,11 @@
-<div class="container-fluid d-flex justify-content-center">
-  <div class="col-12 col-sm-12col-md-12 col-lg-8 ">
-    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Snow Patrol
-          with Ed Sheeran</h5>
-        <small>Saturday 06 October 2018</small>
-      </div>
-      <p class="mb-1">Zénith de Lyon, France</p>
-      <small>More details...</small>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Paul Kalkbrenner</h5>
-        <small class="text-muted">Saturday 06 October 2018</small>
-      </div>
-      <p class="mb-1">Ninkasi kao.Lyon, France</p>
-      <small class="text-muted">More details...</small>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">NTM</h5>
-        <small class="text-muted">Saturday 06 October 2018</small>
-      </div>
-      <p class="mb-1">Le periscope.Lyon, France</p>
-      <small class="text-muted">More details...</small>
-    </a>
-  </div>
+<div class="container-fluid d-flex  justify-content-between">
+
+  <ul class="list-group ">
+
+  <app-event-item *ngFor="let v of objetTest.resultsPage.results.event;let i=index" [index]="i" [oneEvent]="v"></app-event-item>
+
+
+
+  </ul>
+
 </div>
