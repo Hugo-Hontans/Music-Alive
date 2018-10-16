@@ -1,11 +1,8 @@
+<div>
+  <app-artistpage></app-artistpage>
+</div>
 <div class="container-fluid d-flex  justify-content-between">
-
   <ul class="list-group ">
-
-  <app-event-item *ngFor="let v of objetTest.resultsPage.results.event;let i=index" [index]="i" [oneEvent]="v"></app-event-item>
-
-
-
+    <app-event-item *ngFor="let oneEvent of objetTest.resultsPage.results.event" [oneEvent]="oneEvent"></app-event-item>
   </ul>
-
 </div>

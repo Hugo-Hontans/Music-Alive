@@ -10,6 +10,7 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { EventItemComponent } from './event-item/event-item.component';
 import { Input } from '@angular/core';
+import { ArtistpageComponent } from './artistpage/artistpage.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { Input } from '@angular/core';
     EventlistComponent,
     FooterComponent,
     ContentComponent,
-    EventItemComponent
+    EventItemComponent,
+    ArtistpageComponent
   ],
   imports: [
     BrowserModule,
