@@ -9,12 +9,15 @@ import { ContentComponent } from './content/content.component';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { EventItemComponent } from './event-item/event-item.component';
+<<<<<<< HEAD
 import { SongkickService } from './services/songkick.service';
+=======
 import { Input } from '@angular/core';
 
 
 import { AgmCoreModule } from '@agm/core';
 
+>>>>>>> team-dev
 @NgModule({
   declarations: [
     AppComponent,
