@@ -9,7 +9,7 @@ import { ContentComponent } from './content/content.component';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { EventItemComponent } from './event-item/event-item.component';
-import { Input } from '@angular/core';
+import { SongkickService } from './services/songkick.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +25,7 @@ import { Input } from '@angular/core';
     HttpModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [SongkickService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

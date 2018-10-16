@@ -1,7 +1,6 @@
 import { Component, Injectable } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
-
+import { SongkickService } from './services/songkick.service';
 @Component ({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,14 +12,11 @@ export class AppComponent {
   performed = false;
   title = 'easy-musique';
   response;
-  private apiUrl = 'https://api.songkick.com/api/3.0/events.json?apikey=jGIjCGirpGWFCCqb&artist_name=';
-  constructor (private http: HttpClient ) {}
+  constructor (private service: SongkickService ) {}
   search(form: NgForm) {
-    this.performed = true;
     const artist: string = form.value['artist'];
-    this.http.get(this.apiUrl + artist).subscribe( (data) => {
-      this.response = data;
-      console.log(data);
-    });
+    this.service.apiCall(artist).subscribe((data) => {
+    this.response = data;
+    this.performed = true; });
   }
 }
