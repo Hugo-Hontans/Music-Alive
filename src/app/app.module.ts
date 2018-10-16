@@ -10,6 +10,10 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { EventItemComponent } from './event-item/event-item.component';
 import { Input } from '@angular/core';
+
+
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,13 +21,17 @@ import { Input } from '@angular/core';
     EventlistComponent,
     FooterComponent,
     ContentComponent,
-    EventItemComponent
+    EventItemComponent,
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBNiGHB5tcAsl9ilspi0aqb093Nlvdy5L8'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
