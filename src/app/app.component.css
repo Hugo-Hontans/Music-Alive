@@ -3,20 +3,24 @@
     display:none;
   }
   .box{
-    margin: 0px auto;
-    width: 100%;
+    top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%;
   }
   .container-4 {
-    width: 100%;
+    width: 94%;
   }
 }
 @media screen and (min-width: 769px){
   .box{
     margin: 100px auto;
+    width: 80%;
     max-width: 800px;
   }
   .container-4 {
     max-width: 800px;
+    width: 80%;
   }
 }
 
@@ -33,7 +37,10 @@
   font-size: 15pt;
   background: #2b303b;
   color: #6b6b6b;
+  text-align-last: center;
 
+}
+.option {
 }
 
 .logo{
@@ -51,15 +58,12 @@
 }
 .box{
     z-index: 3;
-    width: 80%;
     height: 60px;
   }
   .container-4{
     position: -webkit-sticky;
     position: sticky;
-    top: 3%;
     overflow: hidden;
-    width: 80%;
     vertical-align: middle;
     white-space: nowrap;
   }

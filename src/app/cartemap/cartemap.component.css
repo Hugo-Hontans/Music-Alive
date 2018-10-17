@@ -1,16 +1,8 @@
 
 /*en grand*/
 agm-map {
-  height: 200px;
-  width: 66vw;
-  margin-top:15%;
+  height: 300px;
+  width: 100%;
 }
 
-/*en petit*/
-@media screen and (max-width:768px){
-  agm-map {
-    height: 200px;
-    width: 80vw;
-    margin-top:5%;
-  }
-}
+
