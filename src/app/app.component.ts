@@ -1,4 +1,3 @@
-import { CartemapComponent } from './cartemap/cartemap.component';
 import { Component, Injectable, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { SongkickService } from './services/songkick.service';
@@ -13,21 +12,28 @@ export class AppComponent implements OnInit {
   performed = false;
   title = 'easy-musique';
   response;
-  constructor (private service: SongkickService ) {}
+  type;
+  constructor (private service: SongkickService ) {
+    this.type = 'artist';
+  }
   search(form: NgForm) {
     const artist: string = form.value['artist'];
+    this.type = form.value['type'];
     this.service.apiCall(artist).subscribe((data) => {
     this.response = data;
     this.performed = true; });
+    console.log(this.type);
   }
   ngOnInit() {
+    let lng;
+    let lat;
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(displayLocationInfo);
     }
 
     function displayLocationInfo(position) {
-      const lng = position.coords.longitude;
-      const lat = position.coords.latitude;
+      lng = position.coords.longitude;
+      lat = position.coords.latitude;
 
       console.log(`longitude: ${ lng } | latitude: ${ lat }`);
     }
