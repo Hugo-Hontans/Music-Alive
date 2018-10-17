@@ -9,12 +9,14 @@ import { SongkickService } from './services/songkick.service';
 })
 @Injectable()
 export class AppComponent implements OnInit {
+  artistName;
   performed = false;
   title = 'easy-musique';
   response;
   constructor(private service: SongkickService) {}
   search(form: NgForm) {
     const artist: string = form.value['artist'];
+    this.artistName = artist;
     this.service.apiCall(artist).subscribe(data => {
       this.response = data;
       this.performed = true;

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { LastFMService } from '../services/last-fm.service';
 import { SongkickService } from '../services/songkick.service';
 
@@ -8,14 +8,14 @@ import { SongkickService } from '../services/songkick.service';
   styleUrls: ['./artistpage.component.css']
 })
 export class ArtistpageComponent implements OnInit {
+  @Input() artistName;
+
   name;
   image;
   onTour;
   affichageOnTour;
   similarArtist;
   summary;
-
-  artistName;
 
   constructor(
     private lastFmService: LastFMService,
@@ -41,12 +41,9 @@ export class ArtistpageComponent implements OnInit {
     });
   }
 
-  getArtistName() {
-    this.artistName = this.songkickservice.getArtistName();
+  ngOnInit(){
   }
-
-  ngOnInit() {
-    this.getArtistName();
+  ngOnChanges() {  
     this.searchMusic();
   }
 }

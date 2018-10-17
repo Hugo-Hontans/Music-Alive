@@ -5,15 +5,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SongkickService {
-  artistName;
+
   private apiUrl =
     'https://api.songkick.com/api/3.0/events.json?apikey=jGIjCGirpGWFCCqb&artist_name=';
   constructor(private http: HttpClient) {}
+
   apiCall(artist: string) {
-    this.artistName = artist;
     return this.http.get(this.apiUrl + artist);
-  }
-  getArtistName() {
-    return this.artistName;
   }
 }
