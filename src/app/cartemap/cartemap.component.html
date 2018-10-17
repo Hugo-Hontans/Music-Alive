@@ -3,6 +3,6 @@
   <!--affichage de la carte + positionnement du centre de la carte(à faire: un algo pour prendre moyenne pondérée des marqueurs)-->
 <agm-map [latitude]="lat" [longitude]="lng">
   <!--affichage et positionnement de marqueurs. A boucler.-->
-  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  <app-mapmarkers *ngFor="let index of objetTest.resultsPage.results.event" [index]="index"></app-mapmarkers>
 </agm-map>
 </div>

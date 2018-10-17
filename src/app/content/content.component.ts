@@ -12,7 +12,6 @@ export class ContentComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('ContentComp :', this.data);
   }
 
 }

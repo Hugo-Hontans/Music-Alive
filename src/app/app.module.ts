@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EventItemComponent } from './event-item/event-item.component';
 import { SongkickService } from './services/songkick.service';
 import { AgmCoreModule } from '@agm/core';
+import { MapmarkersComponent } from './mapmarkers/mapmarkers.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AgmCoreModule } from '@agm/core';
     FooterComponent,
     ContentComponent,
     EventItemComponent,
+    MapmarkersComponent,
 
   ],
   imports: [
