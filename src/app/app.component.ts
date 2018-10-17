@@ -7,7 +7,6 @@ import { SongkickService } from './services/songkick.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-
 @Injectable()
 export class AppComponent implements OnInit {
   performed = false;

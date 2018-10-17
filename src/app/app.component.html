@@ -1,14 +1,16 @@
 <img class="logo" src="../../assets/img/logo.png">
 <div class=" box container-4 ">
     <form (ngSubmit)="search(f)" #f="ngForm">
-    <input type="search" id="search" placeholder="Search for events" name="artist" ngModel required/>
-    <button type="submit" [disabled]="f.invalid" class="icon"><i class="fa fa-search"></i></button>
+      <input type="search" id="search" placeholder="Search for events" name="artist" ngModel required />
+      <button type="submit" [disabled]="f.invalid" class="icon"><i class="fa fa-search"></i></button>
     </form>
-</div>
+  </div>
 
 
 
-<div class='content'>
-<app-content [data]="response" [performed]="performed"></app-content>
-<app-footer></app-footer>
+  <div class='content'>
+    <app-content [data]="response" [artistName]="artistName" [performed]="performed"></app-content>
+    <app-artistpage></app-artistpage>
+    <app-footer></app-footer>
+  </div>
 </div>

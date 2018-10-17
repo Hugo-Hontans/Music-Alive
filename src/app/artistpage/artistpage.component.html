@@ -1,0 +1,40 @@
+<!--div class="container">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-around">
+      <h1>{{ name }}</h1>
+      <button [ngClass]="{
+      'btn-danger': onTour === '0',
+      'btn-success': onTour === '1'
+    }" class="btn disabled">{{
+        affichageOnTour }}</button>
+      <img class="img-fluid" src="{{ image }}" alt="photo of artist">
+    </div>
+
+    <p> {{ summary }}</p>
+    <ul>
+      <li *ngFor="let artist of similarArtist">
+        {{ artist.name }}
+      </li>
+    </ul>
+  </div>
+</div-->
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{ name }} </h1>
+    <button [ngClass]="{
+          'btn-danger': onTour === '0',
+          'btn-success': onTour === '1'
+        }"
+      class="btn disabled">{{
+      affichageOnTour }}</button>
+    <img class="img-fluid" src="{{ image }}" alt="photo of artist">
+    <p class="lead">{{ summary }}</p>
+    <ul>
+      <li *ngFor="let artist of similarArtist">
+        {{ artist.name }}
+      </li>
+    </ul>
+  </div>
+</div>

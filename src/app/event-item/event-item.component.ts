@@ -8,8 +8,6 @@ import { Component, OnInit, Input } from '@angular/core';
 export class EventItemComponent implements OnInit {
   @Input()
   oneEvent;
-  @Input()
-  index: number;
 
   constructor() {}
 

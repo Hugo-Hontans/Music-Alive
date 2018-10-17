@@ -9,10 +9,11 @@ export class ContentComponent implements OnInit {
   @Input() data;
 
   @Input() performed;
+
+  @Input() artistName;
   constructor() { }
 
   ngOnInit() {
-    console.log('ContentComp :', this.data);
   }
 
 }
