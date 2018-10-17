@@ -8,9 +8,6 @@ import { SongkickService } from '../services/songkick.service';
   styleUrls: ['./artistpage.component.css']
 })
 export class ArtistpageComponent implements OnInit {
-  searchStr: string;
-  searchResult: boolean;
-
   name;
   image;
   onTour;
@@ -26,11 +23,7 @@ export class ArtistpageComponent implements OnInit {
   ) {}
 
   searchMusic() {
-    this.searchResult = true;
     this.lastFmService.searchMusic(this.artistName).subscribe((res: any) => {
-      console.log('julien');
-      console.log(res);
-
       this.name = res.artist.name;
       this.onTour = res.artist.ontour;
       this.image = res.artist.image[4]['#text'];
@@ -44,12 +37,12 @@ export class ArtistpageComponent implements OnInit {
 
       const regex = /(<([^>]+)>)/gi;
       this.summary = this.summary.replace(regex, '');
+      this.summary = this.summary.replace('Read more on Last.fm', '');
     });
   }
 
   getArtistName() {
     this.artistName = this.songkickservice.getArtistName();
-    console.log('le nom de lartiste' + this.artistName);
   }
 
   ngOnInit() {
