@@ -1,3 +1,4 @@
+import { SongkickService } from './songkick.service';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -5,20 +6,19 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class LastFMService {
-  apiKey = 'e6362621a0e90d003cb1c4cb45c7ab7e';
-  artistName: string = 'orelsan';
+  formatJson = '&format=json';
   response;
   apiUrl =
-    'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=' +
-    this.artistName +
-    '&api_key=' +
-    this.apiKey +
-    '&format=json';
+    'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&api_key=e6362621a0e90d003cb1c4cb45c7ab7e&artist=';
+  //        http://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=e6362621a0e90d003cb1c4cb45c7ab7e&artist=&format=json
 
-  constructor(private httpclient: HttpClient) {}
+  constructor(
+    private httpclient: HttpClient,
+    private songkickservice: SongkickService
+  ) {}
 
-  searchMusic() {
-    return this.httpclient.get(this.apiUrl);
+  searchMusic(artistName) {
+    return this.httpclient.get(this.apiUrl + artistName + this.formatJson);
   }
 }
 /*

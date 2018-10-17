@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LastFMService } from '../services/last-fm.service';
+import { SongkickService } from '../services/songkick.service';
 
 @Component({
   selector: 'app-artistpage',
@@ -17,11 +18,16 @@ export class ArtistpageComponent implements OnInit {
   similarArtist;
   summary;
 
-  constructor(private lastFmService: LastFMService) {}
+  artistName;
+
+  constructor(
+    private lastFmService: LastFMService,
+    private songkickservice: SongkickService
+  ) {}
 
   searchMusic() {
     this.searchResult = true;
-    this.lastFmService.searchMusic().subscribe((res: any) => {
+    this.lastFmService.searchMusic(this.artistName).subscribe((res: any) => {
       console.log('julien');
       console.log(res);
 
@@ -41,7 +47,13 @@ export class ArtistpageComponent implements OnInit {
     });
   }
 
+  getArtistName() {
+    this.artistName = this.songkickservice.getArtistName();
+    console.log('le nom de lartiste' + this.artistName);
+  }
+
   ngOnInit() {
+    this.getArtistName();
     this.searchMusic();
   }
 }

@@ -10,7 +10,7 @@ export class ContentComponent implements OnInit {
 
   @Input() performed;
 
-  @Input() artistName;
+
   constructor() { }
 
   ngOnInit() {

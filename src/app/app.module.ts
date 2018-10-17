@@ -1,7 +1,7 @@
 import { LocationService } from './services/location.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CartemapComponent } from './cartemap/cartemap.component';
 import { EventlistComponent } from './eventlist/eventlist.component';
@@ -14,6 +14,7 @@ import { Input } from '@angular/core';
 import { ArtistpageComponent } from './artistpage/artistpage.component';
 import { SongkickService } from './services/songkick.service';
 import { AgmCoreModule } from '@agm/core';
+import { LastFMService } from './services/last-fm.service';
 
 @NgModule({
   declarations: [
@@ -34,9 +35,7 @@ import { AgmCoreModule } from '@agm/core';
       apiKey: 'AIzaSyBNiGHB5tcAsl9ilspi0aqb093Nlvdy5L8'
     })
   ],
-  providers: [
-  SongkickService,
-  LocationService],
+  providers: [LastFMService, SongkickService, LocationService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
