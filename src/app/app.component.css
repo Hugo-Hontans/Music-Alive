@@ -41,8 +41,8 @@
 
 }
 .option {
+  text-align-last: center;
 }
-
 .logo{
     z-index: 3;
     position: -webkit-sticky;

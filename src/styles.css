@@ -2,11 +2,12 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
 @import "../node_modules/font-awesome/css/font-awesome.css";
 body{
-  background: url(./assets/img/background2.jpg) no-repeat center center fixed;
+  /*background: url(./assets/img/background2.jpg) no-repeat center center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: white;
   }
 
   .imghaut {
