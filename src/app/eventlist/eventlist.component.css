@@ -7,10 +7,9 @@
 
 
 .my-pagination /deep/ .ngx-pagination .current {
-  color:white;
+  color: purple;
   text-decoration: underline;
-  border-radius: 100%;
-  background-color:gray;
+  background-color:white
 }
 
 .my-pagination /deep/ .ngx-pagination {
