@@ -19,10 +19,12 @@ export class AppComponent implements OnInit {
   search(form: NgForm) {
     const artist: string = form.value['artist'];
     this.type = form.value['type'];
+    this.artistName = artist;
+    this.performed = true;
     this.service.apiCall(artist).subscribe((data) => {
     this.response = data;
-    this.performed = true; });
-    this.artistName = artist;
+     });
+    
   }
   ngOnInit() {
     let lng;
@@ -34,8 +36,6 @@ export class AppComponent implements OnInit {
     function displayLocationInfo(position) {
       lng = position.coords.longitude;
       lat = position.coords.latitude;
-
-      console.log(`longitude: ${ lng } | latitude: ${ lat }`);
     }
   }
 }

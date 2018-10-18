@@ -26,8 +26,8 @@ import { LastFMService } from './services/last-fm.service';
     FooterComponent,
     ContentComponent,
     EventItemComponent,
-    ArtistpageComponent
-    MapmarkersComponent,
+    ArtistpageComponent,
+    MapmarkersComponent
 
   ],
   imports: [
