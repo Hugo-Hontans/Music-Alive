@@ -1,6 +1,4 @@
-<div class="nextvious d-flex justify-content-center">
-  <pagination-controls class="my-pagination" (pageChange)="p[i] = $event" [id]="id"></pagination-controls>
-</div>
+
 
 <div class="container-fluid d-flex  justify-content-between">
     <ul class="list-group ">
@@ -9,4 +7,8 @@
         let i=index" [index]="i" [oneEvent]="v">
         </app-event-item>
     </ul>
+</div>
+
+<div class="nextvious d-flex justify-content-center">
+  <pagination-controls class="my-pagination" (pageChange)="p[i] = $event" [id]="id"></pagination-controls>
 </div>

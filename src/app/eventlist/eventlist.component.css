@@ -7,11 +7,14 @@
 
 
 .my-pagination /deep/ .ngx-pagination .current {
-  background: lightskyblue;
+  color:white;
+  text-decoration: underline;
+  border-radius: 100%;
+  background-color:gray;
 }
 
 .my-pagination /deep/ .ngx-pagination {
-  background: grey;
+  color: grey;
   padding-right: 50px;
 
   border-radius: 25px;

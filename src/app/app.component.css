@@ -63,6 +63,7 @@
   .container-4{
     position: -webkit-sticky;
     position: sticky;
+    top: 3%;
     overflow: hidden;
     vertical-align: middle;
     white-space: nowrap;
