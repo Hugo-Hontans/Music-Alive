@@ -1,1 +1,13 @@
-<agm-marker [longitude]="index.venue.lng" [latitude]="index.venue.lat"><agm-info-window>{{index.performance[0].displayName}}, {{index.venue.displayName}}, {{index.venue.start.date}}, {{index.venue.start}},  </agm-info-window></agm-marker>
+<agm-marker [longitude]="index.venue.lng" [latitude]="index.venue.lat">
+  <agm-info-window>
+    <div class="window">{{index.performance[0].displayName}} will be in {{index.location.city}},  
+      <a href="{{index.venue.uri}}">
+        {{index.venue.displayName}}
+      </a>
+      , the {{index.start.date}} at {{index.start.time}}
+      <a class="btn btn-info btn-outline-info btnmarker" role="button" href="{{ index.uri }}">
+        <small>Details</small>
+      </a>
+    </div>
+  </agm-info-window>
+</agm-marker>

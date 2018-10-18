@@ -1,0 +1,16 @@
+.window{
+    width:200px;
+    height: 110px;
+    line-height: 1.8;
+}
+
+.btnmarker {
+    position:absolute;
+    right:0px;
+    bottom:0px;
+}
+
+.gm-style-iw{
+    top:16px;
+}
+
