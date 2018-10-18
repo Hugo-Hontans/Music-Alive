@@ -1,14 +1,14 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { SongkickService } from './services/songkick.service';
-@Component ({
+@Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-
 @Injectable()
 export class AppComponent implements OnInit {
+  artistName;
   performed = false;
   title = 'easy-musique';
   response;
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
     this.service.apiCall(artist).subscribe((data) => {
     this.response = data;
     this.performed = true; });
-    console.log(this.type);
+    this.artistName = artist;
   }
   ngOnInit() {
     let lng;

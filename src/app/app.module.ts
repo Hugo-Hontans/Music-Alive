@@ -1,7 +1,7 @@
 import { LocationService } from './services/location.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CartemapComponent } from './cartemap/cartemap.component';
 import { EventlistComponent } from './eventlist/eventlist.component';
@@ -10,10 +10,13 @@ import { ContentComponent } from './content/content.component';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { EventItemComponent } from './event-item/event-item.component';
+import { Input } from '@angular/core';
+import { ArtistpageComponent } from './artistpage/artistpage.component';
 import { SongkickService } from './services/songkick.service';
 import { AgmCoreModule } from '@agm/core';
 import { MapmarkersComponent } from './mapmarkers/mapmarkers.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { LastFMService } from './services/last-fm.service';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     FooterComponent,
     ContentComponent,
     EventItemComponent,
+    ArtistpageComponent
     MapmarkersComponent,
 
   ],
@@ -36,9 +40,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     }),
     NgxPaginationModule
   ],
-  providers: [
-  SongkickService,
-  LocationService],
+  providers: [LastFMService, SongkickService, LocationService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

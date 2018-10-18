@@ -8,11 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class EventlistComponent implements OnInit {
   @Input()
   objetTest;
-  
+  @Input() artistName;
   p:number[] = [];
 
   constructor() {}
 
   ngOnInit() {
+
   }
 }
