@@ -10,6 +10,8 @@ export class MapmarkersComponent implements OnInit {
 
   constructor() { }
 
+  ngOnChanges() {
+  }
   ngOnInit() {
   }
 
