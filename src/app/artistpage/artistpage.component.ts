@@ -16,6 +16,7 @@ export class ArtistpageComponent implements OnInit {
   affichageOnTour;
   similarArtist;
   summary;
+  errorMessage="";
 
   constructor(
     private lastFmService: LastFMService,
@@ -24,20 +25,31 @@ export class ArtistpageComponent implements OnInit {
 
   searchMusic() {
     this.lastFmService.searchMusic(this.artistName).subscribe((res: any) => {
-      this.name = res.artist.name;
-      this.onTour = res.artist.ontour;
-      this.image = res.artist.image[4]['#text'];
-      this.summary = res.artist.bio.summary;
-      this.similarArtist = res.artist.similar.artist;
-      if (this.onTour == 0) {
-        this.affichageOnTour = 'Not on tour';
-      } else {
-        this.affichageOnTour = 'On tour';
+      if( res.error==6){
+        console.log(res)
+        this.errorMessage = this.artistName + " was not found. Please retry another request." ;
       }
+      else {
+        this.errorMessage = null;
+        this.name = res.artist.name;
+        this.onTour = res.artist.ontour;
+        this.image = res.artist.image[4]['#text'];
+        this.summary = res.artist.bio.summary;
+        this.similarArtist = res.artist.similar.artist;
+        if (this.onTour == 0) {
+          this.affichageOnTour = 'Not on tour';
+        } 
+        else {
+          this.affichageOnTour = 'On tour';
+        }
 
-      const regex = /(<([^>]+)>)/gi;
-      this.summary = this.summary.replace(regex, '');
-      this.summary = this.summary.replace('Read more on Last.fm', '');
+        const regex = /(<([^>]+)>)/gi;
+        this.summary = this.summary.replace(regex, '');
+        this.summary = this.summary.replace('Read more on Last.fm', '');
+        if (this.summary==" "){
+          this.summary="We don't know this artist's bio."
+        }
+      }
     });
   }
 
@@ -45,5 +57,6 @@ export class ArtistpageComponent implements OnInit {
   }
   ngOnChanges() {  
     this.searchMusic();
+    console.log(this.name)
   }
 }

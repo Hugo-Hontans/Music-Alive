@@ -1,4 +1,4 @@
-<div class="container">
+<div *ngIf="errorMessage==null" class="container">
   <div class="row">
     <div class="col-12 col-md-6">
       <h1 class="text-center">{{ name }}</h1>
@@ -9,13 +9,17 @@
         affichageOnTour }}</button>
       <p class="text-center">{{ summary }}</p>
       <ul>Similar artists :
+        <span *ngIf="similarArtist.length==0 || similarArtist[0].text==''">
+           No similar artist were found.
+        </span>
         <li *ngFor="let artist of similarArtist">
-          {{ artist.name }} 
+          {{ artist.name }}
         </li>
       </ul>
     </div>
     <div class="col-12 col-md-6">
-      <img class="img-fluid col-6 offset-3 col-md-12 offset-md-0" src="{{ image }}" alt="photo of artist">
+      <img class="img-fluid col-6 offset-3 col-md-12 offset-md-0" src="{{ image }}" alt="No artist photo">
     </div>
   </div>
 </div>
+<div id="errorMessage" class="text-center" *ngIf="errorMessage!=null">{{ errorMessage }}</div>
