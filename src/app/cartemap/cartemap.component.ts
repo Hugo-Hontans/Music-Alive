@@ -15,8 +15,6 @@ export class CartemapComponent implements OnInit {
   lat: number = 45.750000;
   lng: number = 4.850000;
 
-  ngOnChanges(){
-}
 
   ngOnInit(){
     

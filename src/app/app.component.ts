@@ -20,9 +20,10 @@ export class AppComponent implements OnInit {
     const artist: string = form.value['artist'];
     this.type = form.value['type'];
     this.artistName = artist;
-    this.performed = true;
+    
     this.service.apiCall(artist).subscribe((data) => {
-    this.response = data;
+      this.performed = true;
+      this.response = data;
      });
     
   }
