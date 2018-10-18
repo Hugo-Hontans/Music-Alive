@@ -1,11 +1,12 @@
+<div class="nextvious d-flex justify-content-center">
+  <pagination-controls class="my-pagination" (pageChange)="p[i] = $event" [id]="id"></pagination-controls>
+</div>
+
 <div class="container-fluid d-flex  justify-content-between">
-
-  <ul class="list-group ">
-
-  <app-event-item class="shadow" *ngFor="let v of objetTest.resultsPage.results.event;let i=index" [index]="i" [oneEvent]="v"></app-event-item>
-
-
-
-  </ul>
-
+    <ul class="list-group ">
+        <app-event-item class="shadow" *ngFor="let v of objetTest.resultsPage.results.event |
+        paginate: { itemsPerPage: 5, currentPage: p[i], id: id };
+        let i=index" [index]="i" [oneEvent]="v">
+        </app-event-item>
+    </ul>
 </div>

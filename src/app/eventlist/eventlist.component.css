@@ -5,3 +5,18 @@
 }
 
 
+
+.my-pagination /deep/ .ngx-pagination .current {
+  background: lightskyblue;
+}
+
+.my-pagination /deep/ .ngx-pagination {
+  background: grey;
+  padding-right: 50px;
+
+  border-radius: 25px;
+}
+
+.nextvious {
+  margin-top: 1.5%;
+}

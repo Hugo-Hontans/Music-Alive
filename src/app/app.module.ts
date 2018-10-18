@@ -13,6 +13,7 @@ import { EventItemComponent } from './event-item/event-item.component';
 import { SongkickService } from './services/songkick.service';
 import { AgmCoreModule } from '@agm/core';
 import { MapmarkersComponent } from './mapmarkers/mapmarkers.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MapmarkersComponent } from './mapmarkers/mapmarkers.component';
     HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBNiGHB5tcAsl9ilspi0aqb093Nlvdy5L8'
-    })
+    }),
+    NgxPaginationModule
   ],
   providers: [
   SongkickService,
