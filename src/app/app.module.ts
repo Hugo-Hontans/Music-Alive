@@ -17,6 +17,7 @@ import { AgmCoreModule } from '@agm/core';
 import { MapmarkersComponent } from './mapmarkers/mapmarkers.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { LastFMService } from './services/last-fm.service';
+import { ArtistResultComponent } from './artist-result/artist-result.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { LastFMService } from './services/last-fm.service';
     ContentComponent,
     EventItemComponent,
     ArtistpageComponent,
-    MapmarkersComponent
+    MapmarkersComponent,
+    ArtistResultComponent
 
   ],
   imports: [
