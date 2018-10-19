@@ -11,6 +11,8 @@ export class ArtistResultComponent implements OnInit {
   artistResult;
   json;
 
+  name;
+
   constructor(private lastfmservice: LastFMService) {}
 
   searchArtists() {
