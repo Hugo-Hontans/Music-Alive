@@ -15,11 +15,6 @@ export class CartemapComponent implements OnInit {
   lat: number = 45.750000;
   lng: number = 4.850000;
 
-  ngOnChanges(){
-    for (let i = 0; i < this.objetTest.resultsPage.results.event.length; i++) {
-      console.log('lat: '+ this.objetTest.resultsPage.results.event[0].venue.lat + ', lng: ' + this.objetTest.resultsPage.results.event[i].venue.lng)
-  }
-}
 
   ngOnInit(){
     

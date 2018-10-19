@@ -1,4 +1,4 @@
-<div class = content>
-<app-cartemap [performed]="performed" [objetTest]="data"></app-cartemap>
-<app-eventlist *ngIf="performed==true" [objetTest]="data"></app-eventlist>
+<div class = "content">
+<app-cartemap [performed]="performed" *ngIf="performed===true" [objetTest]="data"></app-cartemap>
+<app-eventlist *ngIf="performed==true" [artistName]="artistName" [objetTest]="data"></app-eventlist>
 </div>

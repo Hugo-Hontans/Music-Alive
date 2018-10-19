@@ -8,7 +8,11 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ContentComponent implements OnInit {
   @Input() data;
 
+  @Input() artistName;
+
   @Input() performed;
+
+
   constructor() { }
 
   ngOnInit() {
