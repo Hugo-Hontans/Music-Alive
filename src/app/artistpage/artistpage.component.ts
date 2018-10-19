@@ -26,7 +26,6 @@ export class ArtistpageComponent implements OnInit {
   searchMusic() {
     this.lastFmService.searchMusic(this.artistName).subscribe((res: any) => {
       if( res.error==6){
-        console.log(res)
         this.errorMessage = this.artistName + " was not found. Please retry another request." ;
       }
       else {
@@ -57,6 +56,5 @@ export class ArtistpageComponent implements OnInit {
   }
   ngOnChanges() {  
     this.searchMusic();
-    console.log(this.name)
   }
 }
