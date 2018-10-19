@@ -1,4 +1,4 @@
-<div class = "content">
+<div class = "content" *ngIf='performed==true'>
 <app-cartemap [performed]="performed" *ngIf="performed===true" [objetTest]="data"></app-cartemap>
 <app-eventlist *ngIf="performed==true" [artistName]="artistName" [objetTest]="data"></app-eventlist>
 </div>
