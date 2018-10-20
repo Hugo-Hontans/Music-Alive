@@ -9,7 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';;
 export class CartemapComponent implements OnInit {
 
   @Input() objetTest;
-  @Input() performed;
+ 
 
 
   //donner des positions; les variables sont à lire dans "[longitude]" et "[latitude]"

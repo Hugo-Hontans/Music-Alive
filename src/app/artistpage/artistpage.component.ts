@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { LastFMService } from '../services/last-fm.service';
-import { SongkickService } from '../services/songkick.service';
 
 @Component({
   selector: 'app-artistpage',
@@ -20,7 +19,6 @@ export class ArtistpageComponent implements OnInit {
 
   constructor(
     private lastFmService: LastFMService,
-    private songkickservice: SongkickService
   ) {}
 
   searchMusic() {

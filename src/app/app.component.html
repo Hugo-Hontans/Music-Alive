@@ -1,4 +1,4 @@
-<img class="logo" src="../../assets/img/logo.png">
+<a href="artists/hugo"><img class="logo" src="../../assets/img/logo.png"></a>
 <div class=" box container-4 ">
     <form (ngSubmit)="search(f)" #f="ngForm">
       <select class="select" name="type" [(ngModel)]="type">
@@ -9,12 +9,11 @@
     <input type="search" id="search" placeholder="Search for events" name="artist" ngModel required/>
     <button type="submit" [disabled]="f.invalid" class="icon"><i class="fa fa-search"></i></button>
   </form>
-
 </div>
 
 
 <div class='content'>
-  <app-content *ngIf="performed==true" [artistName]="artistName" [data]="response" [performed]="performed"></app-content>
+  <router-outlet></router-outlet>
 
   <app-footer></app-footer>
 </div>

@@ -8,9 +8,10 @@ export class SongkickService {
 
   private apiUrl =
     'https://api.songkick.com/api/3.0/events.json?apikey=jGIjCGirpGWFCCqb&artist_name=';
+    
   constructor(private http: HttpClient) {}
 
-  apiCall(artist: string) {
+  apiCall(artist) {
     return this.http.get(this.apiUrl + artist);
   }
 }

@@ -1,5 +1,6 @@
 import { LastFMService } from './../services/last-fm.service';
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'app-artist-result',
@@ -7,11 +8,13 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
   styleUrls: ['./artist-result.component.css']
 })
 export class ArtistResultComponent implements OnInit {
-  @Input()
+
   artistResult;
   objetArtists;
 
-  constructor(private lastfmservice: LastFMService) {}
+  constructor(private lastfmservice: LastFMService,
+              private route: ActivatedRoute,
+              ) {}
 
   searchArtists() {
     this.lastfmservice
@@ -21,9 +24,8 @@ export class ArtistResultComponent implements OnInit {
       });
   }
 
-  ngOnInit() {}
-  ngOnChanges() {
+  ngOnInit() {
+    this.artistResult = this.route.snapshot.params['id'];
     this.searchArtists();
-    console.log(this.objetArtists);
   }
 }

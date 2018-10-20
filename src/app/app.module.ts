@@ -18,6 +18,12 @@ import { MapmarkersComponent } from './mapmarkers/mapmarkers.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { LastFMService } from './services/last-fm.service';
 import { ArtistResultComponent } from './artist-result/artist-result.component';
+import { Routes, RouterModule } from '@angular/router';
+
+const appRoutes: Routes = [
+{path: 'artistcontent/:id', component: ContentComponent},
+{path: 'artists/:id', component: ArtistResultComponent}
+];
 
 @NgModule({
   declarations: [
@@ -33,6 +39,7 @@ import { ArtistResultComponent } from './artist-result/artist-result.component';
 
   ],
   imports: [
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     FormsModule,
     HttpModule,
