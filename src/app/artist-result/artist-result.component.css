@@ -1,0 +1,21 @@
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+figure {
+  position: relative;
+  margin-bottom: 0rem;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+figcaption {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  margin: 0;
+  color: white;
+  font-size: 15px;
+  line-height: 18px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}

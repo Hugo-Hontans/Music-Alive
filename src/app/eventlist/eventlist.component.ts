@@ -12,6 +12,7 @@ export class EventlistComponent implements OnInit {
   artistName;
   //parametre de pagination
   p: number[] = [];
+  id: number[] = [];
 
   constructor() {}
 

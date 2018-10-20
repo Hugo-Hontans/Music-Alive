@@ -11,6 +11,9 @@ export class ArtistResultComponent implements OnInit {
   artistResult;
   objetArtists;
 
+  //parametre de pagination
+  p: number[] = [];
+  id: number[] = [];
   constructor(private lastfmservice: LastFMService) {}
 
   searchArtists() {
