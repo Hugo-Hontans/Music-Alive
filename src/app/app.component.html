@@ -1,17 +1,30 @@
 <img class="logo" src="../../assets/img/logo.png">
 <div class=" box container-4 ">
-    <form (ngSubmit)="search(f)" #f="ngForm">
-      <select class="select" name="type" [(ngModel)]="type">
-        <option class="option" value="artist" >artist</option>
-        <option class="option" value="venue">venue</option>
-        <option class="option" value="location">location</option>
-      </select>
-    <input type="search" id="search" placeholder="Search for events" name="artist" ngModel required/>
+  <form (ngSubmit)="search(f)" #f="ngForm">
+    <select class="select" name="type" [(ngModel)]="type">
+      <option class="option" value="artist">artist</option>
+      <option class="option" value="venue">venue</option>
+      <option class="option" value="location">location</option>
+    </select>
+    <input type="search" id="search" placeholder="Search for events" name="artist" ngModel required />
     <button type="submit" [disabled]="f.invalid" class="icon"><i class="fa fa-search"></i></button>
   </form>
 
 </div>
 
+<div class="container-fluid h:5 homemessage d-flex justify-content-center">
+  <div class="row">
+    <div class="row">
+      <p>Find your best </p>
+    </div>
+
+    <div class="row">
+      <div class="marquee">
+        <p>Artist <br><br> Concert <br><br>Place <br><br> Festival</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class='content'>
   <app-content *ngIf="performed==true" [artistName]="artistName" [data]="response" [performed]="performed"></app-content>

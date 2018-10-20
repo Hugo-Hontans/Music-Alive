@@ -133,3 +133,33 @@
 .container-4:hover button.icon:hover {
   background: white;
 }
+
+.marquee {
+width: 100%;
+height: 5%;
+padding: 15%;
+text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.marquee p {
+  display: inline-block;
+  padding-top: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(0, -100%); }
+}
+
+.homemessage p {
+  font-size: 5em;
+}
+
+.homemessage {
+  max-height: 5%;
+  margin-bottom: -50%;
+}

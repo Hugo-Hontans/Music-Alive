@@ -20,3 +20,13 @@ li{
 .img {
   position: right;
 }
+
+
+.btn-danger {
+  opacity: 0.9;
+  background-color: red;
+}
+.btn-success {
+  opacity: 0.9;
+}
+
