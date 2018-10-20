@@ -9,9 +9,7 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
 export class ArtistResultComponent implements OnInit {
   @Input()
   artistResult;
-  json;
-
-  name;
+  objetArtists;
 
   constructor(private lastfmservice: LastFMService) {}
 
@@ -19,13 +17,13 @@ export class ArtistResultComponent implements OnInit {
     this.lastfmservice
       .searchArtists(this.artistResult)
       .subscribe((res: any) => {
-        this.json = res;
+        this.objetArtists = res;
       });
   }
 
   ngOnInit() {}
   ngOnChanges() {
     this.searchArtists();
-    console.log(this.json);
+    console.log(this.objetArtists);
   }
 }

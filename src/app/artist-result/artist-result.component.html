@@ -1,3 +1,11 @@
 <p>
   artist-result works!
 </p>
+<ul>
+  <li *ngFor="let a of objetArtists.results.artistmatches.artist">
+    <h2>{{ a.name }}</h2>
+    <h5>{{ a.listeners }}</h5>
+    <img src="{{ a.image[2]['#text'] }}">
+  </li>
+
+</ul>
