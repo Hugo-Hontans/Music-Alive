@@ -11,6 +11,7 @@ export class EventlistComponent implements OnInit {
   objetTest;
   //parametre de pagination
   p: number[] = [];
+  id: number[] = [];
 
 
 

@@ -1,9 +1,10 @@
 <div class="container-fluid d-flex  justify-content-between">
-    <ul class="list-group ">
-        <app-event-item class="shad" *ngFor="let v of objetTest.resultsPage.results.event |
-        paginate: { itemsPerPage: 5, currentPage: p[i], id: id }" [oneEvent]="v">
-        </app-event-item>
-    </ul>
+  <ul class="list-group ">
+    <app-event-item class="shad" *ngFor="let v of objetTest.resultsPage.results.event |
+        paginate: { itemsPerPage: 5, currentPage: p[i], id: id }"
+      [oneEvent]="v">
+    </app-event-item>
+  </ul>
 </div>
 
 <div class="nextvious d-flex justify-content-center">
