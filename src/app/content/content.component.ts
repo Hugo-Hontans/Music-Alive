@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { SongkickService } from '../services/songkick.service';
 
@@ -24,6 +24,7 @@ export class ContentComponent implements OnInit {
         if(this.objetTest.resultsPage.totalEntries != 0){
           this.affichage = true;
         }
+        else { this.affichage = false;}
 	     });
   	}
 

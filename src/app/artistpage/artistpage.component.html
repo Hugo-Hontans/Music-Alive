@@ -16,7 +16,7 @@
            No similar artist were found.
         </span>
         <li *ngFor="let artist of similarArtist">
-          {{ artist.name }}
+          <a class="similarLi" routerLink="../../artistcontent/{{ artist.name }}">{{ artist.name }}</a>
         </li>
       </ul>
     </div>

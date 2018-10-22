@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';;
+import { Component, OnInit, Input, OnChanges } from '@angular/core';;
 
 
 @Component({
@@ -19,6 +19,8 @@ export class CartemapComponent implements OnInit {
 
 
   ngOnInit(){
+  }
+  ngOnChanges(){
       this.lng = this.objetTest.resultsPage.results.event[0].venue.lng;
       this.lat = this.objetTest.resultsPage.results.event[0].venue.lat;
   }

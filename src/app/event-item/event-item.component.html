@@ -2,7 +2,7 @@
 
   <div class="d-flex w-100 justify-content-between">
 
-    <h6><a href="{{ oneEvent.performance[0].artist.uri }}">{{ oneEvent.performance[0].artist.displayName }}</a></h6>
+    <h2><a href="{{ oneEvent.performance[0].artist.uri }}">{{ oneEvent.performance[0].artist.displayName }}</a></h2>
     <p>{{ oneEvent.type }} at {{ oneEvent.start.datetime | date:'shortTime'}}</p>
   </div>
   <p> {{ oneEvent.start.datetime | date:'fullDate' }} {{ oneEvent.start.date }}</p>
@@ -13,6 +13,6 @@
   <p class="mt-3 mb-1"><a href="{{ oneEvent.venue.uri }}">{{ oneEvent.venue.displayName }}</a> à {{
     oneEvent.venue.metroArea.displayName }}</p>
   <div class="d-flex w-100 justify-content-end">
-    <a class="btn btn-outline-info" role="button" id="moredetails" href="{{ oneEvent.uri }}"><small>More details</small></a>
+    <a class="btn btn-outline-info" role="button" id="moredetails" target="_blank" href="{{ oneEvent.uri }}"><small>Buy tickets</small></a>
   </div>
 </li>
