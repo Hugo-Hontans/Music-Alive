@@ -1,13 +1,13 @@
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <figure *ngFor="let a of objetArtists.results.artistmatches.artist |
     paginate: { itemsPerPage: 8, currentPage: p[i], id: id }"
       class="
-      col-lg-3 col-sm-6 col-xs-6">
-      <img class="img-fluid" src="{{ a.image[3]['#text'] }}">
+      col-lg-3 col-sm-6 col-xs-6 no-gutters">
+      <img class="figure-img img-fluid rounded" src="{{ a.image[2]['#text'] }}" onerror="this.src='https://via.placeholder.com/300x300'">
       <figcaption>
+        <h2>{{ a.name }}</h2>
         <h6 class="text">listenners : {{ a.listeners }}</h6>
-        <h3>{{ a.name }}</h3>
       </figcaption>
     </figure>
 
