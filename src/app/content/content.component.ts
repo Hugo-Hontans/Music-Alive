@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 import { SongkickService } from '../services/songkick.service';
 
 
@@ -18,7 +18,6 @@ export class ContentComponent implements OnInit {
 
     search() {
 	    this.service.apiCall(this.artistName).subscribe((data: any) => {
-	    	console.log("dans la fonction " + data);
 	      this.objetTest = data;
 	     });
   	}
@@ -26,10 +25,10 @@ export class ContentComponent implements OnInit {
   	
 
   ngOnInit() {
-  	this.artistName = this.route.snapshot.params['id'];
-  	console.log(this.artistName)
-  	this.search();
-  	console.log(this.objetTest)
+  	this.route.params.subscribe((params: ParamMap) => {
+      this.artistName = params["id"];
+      this.search();
+    })
   }
 
 }

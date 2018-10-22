@@ -1,6 +1,6 @@
 <ul>
   <li *ngFor="let a of objetArtists.results.artistmatches.artist">
-    <a href="artistcontent/{{a.name}}">{{ a.name }}</a>
+    <a routerLink="../../artistcontent/{{ a.name }}">{{ a.name }}</a>
     <h5>{{ a.listeners }}</h5>
     <img src="{{ a.image[2]['#text'] }}">
   </li>

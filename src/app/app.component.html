@@ -1,4 +1,4 @@
-<a href="artists/hugo"><img class="logo" src="../../assets/img/logo.png"></a>
+<a routerLink="artistcontent/hugo"><img class="logo" src="../../assets/img/logo.png"></a>
 <div class=" box container-4 ">
     <form (ngSubmit)="search(f)" #f="ngForm">
       <select class="select" name="type" [(ngModel)]="type">
@@ -6,7 +6,7 @@
         <option class="option" value="venue">venue</option>
         <option class="option" value="location">location</option>
       </select>
-    <input type="search" id="search" placeholder="Search for events" name="artist" ngModel required/>
+    <input type="search" id="search" placeholder="Search for events" name="searchValue" ngModel required/>
     <button type="submit" [disabled]="f.invalid" class="icon"><i class="fa fa-search"></i></button>
   </form>
 </div>

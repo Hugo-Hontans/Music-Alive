@@ -1,6 +1,8 @@
 import { LastFMService } from './../services/last-fm.service';
-import { Component, OnInit, Input, OnChanges } from '@angular/core';
-import { ActivatedRoute } from '@angular/router'
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-artist-result',
@@ -25,7 +27,10 @@ export class ArtistResultComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.artistResult = this.route.snapshot.params['id'];
-    this.searchArtists();
+    this.route.params.subscribe((params: ParamMap) => {
+      this.artistResult = params["id"];
+      this.searchArtists();
+    })
+
   }
 }
