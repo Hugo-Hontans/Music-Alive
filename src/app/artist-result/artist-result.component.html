@@ -1,4 +1,4 @@
-<div class="container">
+<div *ngIf="affichage==true" class="container">
   <div class="row">
     <figure *ngFor="let a of objetArtists.results.artistmatches.artist |
     paginate: { itemsPerPage: 8, currentPage: p[i], id: id }"

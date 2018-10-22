@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
         break;
 
       case "location":
-        // code...
+
         break;
       
       default:

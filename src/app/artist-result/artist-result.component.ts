@@ -13,6 +13,8 @@ export class ArtistResultComponent implements OnInit {
 
   artistResult;
   objetArtists;
+  // boolean pour eviter les erreurs de la console lors du chargement du component
+  affichage = false;
 
   //parametre de pagination
   p: number[] = [];
@@ -26,6 +28,7 @@ export class ArtistResultComponent implements OnInit {
       .searchArtists(this.artistResult)
       .subscribe((res: any) => {
         this.objetArtists = res;
+        this.affichage = true;
       });
   }
 
@@ -33,7 +36,6 @@ export class ArtistResultComponent implements OnInit {
     this.route.params.subscribe((params: ParamMap) => {
       this.artistResult = params["id"];
       this.searchArtists();
-    })
-
+    })   
   }
 }

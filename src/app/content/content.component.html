@@ -1,7 +1,7 @@
 <div class="content">
-  <app-artistpage [artistName]="artistName"></app-artistpage>
+  <app-artistpage [affichage]="affichage" [artistName]="artistName"></app-artistpage>
   <br>
-  <app-cartemap [objetTest]="objetTest"></app-cartemap>
+  <app-cartemap *ngIf="affichage==true" [objetTest]="objetTest"></app-cartemap>
   <br>
-  <app-eventlist [objetTest]="objetTest"></app-eventlist>
+  <app-eventlist *ngIf="affichage==true" [objetTest]="objetTest"></app-eventlist>
 </div>
