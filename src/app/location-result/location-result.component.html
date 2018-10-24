@@ -5,7 +5,7 @@
   </div>
 </div> -->
 
-<div class="container">
+<div *ngIf="affichage==true" class="container">
   <div class="row">
     <div *ngFor="let l of objetLocation.resultsPage.results.location" class="card border-info mb-6
 col-lg-3 col-sm-6 col-6 "
@@ -13,7 +13,7 @@ col-lg-3 col-sm-6 col-6 "
       <div class="card-header">{{ l.city.displayName }}</div>
       <div class="card-body text-info">
         <h5 class="card-title">Country : {{ l.city.country.displayName }}</h5>
-        <a class="btn btn-outline-info" role="button" id="moredetails" href=""><small>More details</small></a>
+        <a class="btn btn-outline-info" role="button" id="moredetails" routerLink="../../locationcontent/{{ l.metroArea.id }}"><small>More details</small></a>
       </div>
     </div>
   </div>

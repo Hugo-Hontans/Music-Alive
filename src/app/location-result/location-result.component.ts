@@ -9,6 +9,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 export class LocationResultComponent implements OnInit {
   locationResult;
   objetLocation;
+  affichage = false;
 
   constructor(
     private songkickservice: SongkickService,
@@ -20,7 +21,7 @@ export class LocationResultComponent implements OnInit {
       .searchLocation(this.locationResult)
       .subscribe((res: any) => {
         this.objetLocation = res;
-        console.log(this.objetLocation);
+        this.affichage=true;
       });
   }
 

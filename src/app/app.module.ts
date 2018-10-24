@@ -25,7 +25,7 @@ import { LocationResultComponent } from './location-result/location-result.compo
 const appRoutes: Routes = [
 {path: 'artistcontent/:id', component: ContentComponent},
 {path: 'artists/:id', component: ArtistResultComponent},
-{path: 'locationcontent/:id', component: ContentLocationComponent}
+{path: 'locationcontent/:id', component: ContentLocationComponent},
 {path: 'locations/:id', component: LocationResultComponent}
 ];
 
@@ -40,7 +40,7 @@ const appRoutes: Routes = [
     ArtistpageComponent,
     MapmarkersComponent,
     ArtistResultComponent,
-    ContentLocationComponent
+    ContentLocationComponent,
     LocationResultComponent
 
   ],

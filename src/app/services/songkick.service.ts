@@ -5,14 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class SongkickService {
   private apiUrl =
-    'https://api.songkick.com/api/3.0/events.json?apikey=jGIjCGirpGWFCCqb&location=&artist_name=';
+    'https://api.songkick.com/api/3.0/events.json?apikey=jGIjCGirpGWFCCqb&artist_name=';
+
   private apiUrlLocation =
     'https://api.songkick.com/api/3.0/search/locations.json?&apikey=jGIjCGirpGWFCCqb&query=';
     private apiUrlVenue =
     'https://api.songkick.com/api/3.0/search/venues.json?&apikey=jGIjCGirpGWFCCqb&query='
-
-  private apiUrl =
-    'https://api.songkick.com/api/3.0/events.json?apikey=jGIjCGirpGWFCCqb&artist_name=';
 
   private apiUrlLocationSearch1 =
   	'https://api.songkick.com/api/3.0/metro_areas/';
