@@ -1,5 +1,8 @@
 <a routerLink="artistcontent/hugo"><img class="logo" src="../../assets/img/logo.png"></a>
 
+<img (click)="scrollToElement(target)" class="imghaut d-none d-md-block" src="../assets/img/arrow.png" alt="arrow image">
+
+
 <div class="container homemessage">
   <div class="text-wrapper">
     <div class="first-word row justify-content-start">Find your Best</div>
@@ -13,7 +16,7 @@
   </div>
 </div>
 
-<div class=" box container-4 ">
+<div class=" box container-4">
     <form (ngSubmit)="search(f)" #f="ngForm">
       <select class="select" name="type" [(ngModel)]="type">
         <option class="option" value="artist" >artist</option>
@@ -25,7 +28,9 @@
   </form>
 </div>
 
-
+<div #target>
+  <!-- div vide pour la remontée de la flèche -->
+</div>
 <div class='content'>
   <router-outlet></router-outlet>
 
