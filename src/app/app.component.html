@@ -1,4 +1,5 @@
-<a routerLink="artistcontent/hugo"><img class="logo" src="../../assets/img/logo.png"></a>
+<a *ngIf="show==true" routerLink="locationcontent/{{objetLoc}}"><img class="logo" src="../../assets/img/logo.png"></a>
+<a *ngIf="show==false" routerLink=""><img class="logo" src="../../assets/img/logo.png"></a>
 <div class=" box container-4 ">
     <form (ngSubmit)="search(f)" #f="ngForm">
       <select class="select" name="type" [(ngModel)]="type">

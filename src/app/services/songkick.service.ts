@@ -15,7 +15,7 @@ export class SongkickService {
   private apiUrlLocationSearch1 =
   	'https://api.songkick.com/api/3.0/metro_areas/';
   private apiUrlLocationSearch2 =
-  	'/calendar.json?apikey=jGIjCGirpGWFCCqb';
+    '/calendar.json?apikey=jGIjCGirpGWFCCqb';
     
   constructor(private http: HttpClient) {}
 

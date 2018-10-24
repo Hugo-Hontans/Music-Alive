@@ -41,7 +41,7 @@ const appRoutes: Routes = [
     MapmarkersComponent,
     ArtistResultComponent,
     ContentLocationComponent,
-    LocationResultComponent
+    LocationResultComponent,
 
   ],
   imports: [
