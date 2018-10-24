@@ -14,10 +14,11 @@ export class LastFMService {
 
   constructor(private httpclient: HttpClient) {}
 
+  //getInfo et artistPage
   searchMusic(artistName) {
     return this.httpclient.get(this.apiUrl + artistName + this.formatJson);
   }
-
+  //location et artistResult
   searchArtists(artistResult) {
     return this.httpclient.get(
       this.apiUrlSearchArtist + artistResult + this.formatJson

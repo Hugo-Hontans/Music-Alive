@@ -14,35 +14,31 @@ export class AppComponent implements OnInit {
   title = 'easy-musique';
   response;
   type;
-  constructor (private service: SongkickService, private router: Router ) {
+  constructor(private service: SongkickService, private router: Router) {
     this.type = 'artist';
   }
   search(form: NgForm) {
     switch (form.value['type']) {
-      case "artist":
+      case 'artist':
         let artist: string = form.value['searchValue'];
         this.router.navigate(['artists/' + artist]);
         break;
 
-      case "venue":
+      case 'venue':
         let venue: string = form.value['searchValue'];
         this.router.navigate(['artists/' + venue]);
         break;
 
-      case "location":
-        // code...
+      case 'location':
+        let location: string = form.value['searchValue'];
+        this.router.navigate(['locations/' + location]);
         break;
-      
+
       default:
         let error: string = form.value['searchValue'];
         this.router.navigate(['artists/' + error]);
         break;
     }
-
-
-
-    
-    
   }
   ngOnInit() {
     let lng;

@@ -19,10 +19,13 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { LastFMService } from './services/last-fm.service';
 import { ArtistResultComponent } from './artist-result/artist-result.component';
 import { Routes, RouterModule } from '@angular/router';
+import { LocationResultComponent } from './location-result/location-result.component';
 
 const appRoutes: Routes = [
 {path: 'artistcontent/:id', component: ContentComponent},
-{path: 'artists/:id', component: ArtistResultComponent}
+{path: 'artists/:id', component: ArtistResultComponent},
+{path: 'locations/:id', component: LocationResultComponent}
+
 ];
 
 @NgModule({
@@ -35,7 +38,8 @@ const appRoutes: Routes = [
     EventItemComponent,
     ArtistpageComponent,
     MapmarkersComponent,
-    ArtistResultComponent
+    ArtistResultComponent,
+    LocationResultComponent
 
   ],
   imports: [
