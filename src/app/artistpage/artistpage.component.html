@@ -6,8 +6,8 @@
     <div class="col-12 col-md-6">
       <h1 class="text-center">{{ name }}</h1>
       <button [ngClass]="{
-      'btn-danger': onTour === '0',
-      'btn-success': onTour === '1'
+      'btn-danger': affichage == false,
+      'btn-success': affichage == true
     }" class="btn disabled col-6 offset-3">{{
         affichageOnTour }}</button>
       <p class="text-center">{{ summary }}</p>
@@ -16,7 +16,7 @@
            No similar artist were found.
         </span>
         <li *ngFor="let artist of similarArtist">
-          {{ artist.name }}
+          <a class="similarLi" routerLink="../../artistcontent/{{ artist.name }}">{{ artist.name }}</a>
         </li>
       </ul>
     </div>

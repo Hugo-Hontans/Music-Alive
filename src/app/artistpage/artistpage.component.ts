@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { LastFMService } from '../services/last-fm.service';
-import { SongkickService } from '../services/songkick.service';
 
 @Component({
   selector: 'app-artistpage',
@@ -9,10 +8,10 @@ import { SongkickService } from '../services/songkick.service';
 })
 export class ArtistpageComponent implements OnInit {
   @Input() artistName;
+  @Input() affichage;
 
   name;
   image;
-  onTour;
   affichageOnTour;
   similarArtist;
   summary;
@@ -20,7 +19,6 @@ export class ArtistpageComponent implements OnInit {
 
   constructor(
     private lastFmService: LastFMService,
-    private songkickservice: SongkickService
   ) {}
 
   searchMusic() {
@@ -31,11 +29,10 @@ export class ArtistpageComponent implements OnInit {
       else {
         this.errorMessage = null;
         this.name = res.artist.name;
-        this.onTour = res.artist.ontour;
         this.image = res.artist.image[4]['#text'];
         this.summary = res.artist.bio.summary;
         this.similarArtist = res.artist.similar.artist;
-        if (this.onTour == 0) {
+        if (this.affichage == false) {
           this.affichageOnTour = 'Not on tour';
         } 
         else {

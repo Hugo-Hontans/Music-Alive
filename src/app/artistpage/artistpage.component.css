@@ -20,3 +20,6 @@ li{
 .img {
   position: right;
 }
+.similarLi {
+  margin-right: 10px;
+}

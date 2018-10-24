@@ -17,6 +17,17 @@ import { AgmCoreModule } from '@agm/core';
 import { MapmarkersComponent } from './mapmarkers/mapmarkers.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { LastFMService } from './services/last-fm.service';
+import { ArtistResultComponent } from './artist-result/artist-result.component';
+import { Routes, RouterModule } from '@angular/router';
+import { ContentLocationComponent } from './content-location/content-location.component';
+import { LocationResultComponent } from './location-result/location-result.component';
+
+const appRoutes: Routes = [
+{path: 'artistcontent/:id', component: ContentComponent},
+{path: 'artists/:id', component: ArtistResultComponent},
+{path: 'locationcontent/:id', component: ContentLocationComponent},
+{path: 'locations/:id', component: LocationResultComponent}
+];
 
 @NgModule({
   declarations: [
@@ -27,10 +38,14 @@ import { LastFMService } from './services/last-fm.service';
     ContentComponent,
     EventItemComponent,
     ArtistpageComponent,
-    MapmarkersComponent
+    MapmarkersComponent,
+    ArtistResultComponent,
+    ContentLocationComponent,
+    LocationResultComponent
 
   ],
   imports: [
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     FormsModule,
     HttpModule,

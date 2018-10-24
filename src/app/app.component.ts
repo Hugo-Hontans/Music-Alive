@@ -1,6 +1,7 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { SongkickService } from './services/songkick.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,19 +14,31 @@ export class AppComponent implements OnInit {
   title = 'easy-musique';
   response;
   type;
-  constructor (private service: SongkickService ) {
+  constructor(private service: SongkickService, private router: Router) {
     this.type = 'artist';
   }
   search(form: NgForm) {
-    const artist: string = form.value['artist'];
-    this.type = form.value['type'];
-    this.artistName = artist;
-    
-    this.service.apiCall(artist).subscribe((data) => {
-      this.performed = true;
-      this.response = data;
-     });
-    
+    switch (form.value['type']) {
+      case 'artist':
+        let artist: string = form.value['searchValue'];
+        this.router.navigate(['artists/' + artist]);
+        break;
+
+      case 'venue':
+        let venue: string = form.value['searchValue'];
+        this.router.navigate(['artists/' + venue]);
+        break;
+
+      case 'location':
+        let location: string = form.value['searchValue'];
+        this.router.navigate(['locations/' + location]);
+        break;
+
+      default:
+        let error: string = form.value['searchValue'];
+        this.router.navigate(['artists/' + error]);
+        break;
+    }
   }
   ngOnInit() {
     let lng;

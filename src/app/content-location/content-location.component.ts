@@ -2,24 +2,22 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { SongkickService } from '../services/songkick.service';
 
-
 @Component({
-  selector: 'app-content',
-  templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css']
+  selector: 'app-content-location',
+  templateUrl: './content-location.component.html',
+  styleUrls: ['./content-location.component.css']
 })
-export class ContentComponent implements OnInit {
+export class ContentLocationComponent implements OnInit {
 
-
-  artistName;
-  objetTest;
-  // boolean pour eviter les erreurs de la console lors du chargement du component
-  affichage = false;
+	id = "28889";
+    objetTest;
+    // boolean pour eviter les erreurs de la console lors du chargement du component
+    affichage = false;
 
   constructor(private route: ActivatedRoute, private service: SongkickService) { }
 
-    search() {
-	    this.service.apiCall(this.artistName).subscribe((data: any) => {
+  search() {
+	    this.service.apiCallLocationSearch(this.id).subscribe((data: any) => {
 	      this.objetTest = data;
         if(this.objetTest.resultsPage.totalEntries != 0){
           this.affichage = true;
@@ -28,11 +26,9 @@ export class ContentComponent implements OnInit {
 	     });
   	}
 
-  	
-
   ngOnInit() {
   	this.route.params.subscribe((params: ParamMap) => {
-      this.artistName = params["id"];
+      this.id = params["id"];
       this.search();
     })
   }
