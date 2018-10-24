@@ -21,7 +21,7 @@ export class LocationResultComponent implements OnInit {
       .searchLocation(this.locationResult)
       .subscribe((res: any) => {
         this.objetLocation = res;
-        this.affichage=true;
+        this.affichage = true;
       });
   }
 

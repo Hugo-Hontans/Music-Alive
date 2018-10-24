@@ -21,12 +21,17 @@ import { ArtistResultComponent } from './artist-result/artist-result.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ContentLocationComponent } from './content-location/content-location.component';
 import { LocationResultComponent } from './location-result/location-result.component';
+import { VenueResultComponent } from './venue-result/venue-result.component';
+import { ContentVenueComponent } from './content-venue/content-venue.component';
+import { VenuePageComponent } from './venue-page/venue-page.component';
 
 const appRoutes: Routes = [
 {path: 'artistcontent/:id', component: ContentComponent},
 {path: 'artists/:id', component: ArtistResultComponent},
 {path: 'locationcontent/:id', component: ContentLocationComponent},
-{path: 'locations/:id', component: LocationResultComponent}
+{path: 'locations/:id', component: LocationResultComponent},
+{path: 'venues/:id', component: VenueResultComponent},
+{path: 'venuescontent/:id', component: ContentVenueComponent}
 ];
 
 @NgModule({
@@ -41,7 +46,10 @@ const appRoutes: Routes = [
     MapmarkersComponent,
     ArtistResultComponent,
     ContentLocationComponent,
-    LocationResultComponent
+    LocationResultComponent,
+    VenueResultComponent,
+    ContentVenueComponent,
+    VenuePageComponent
 
   ],
   imports: [

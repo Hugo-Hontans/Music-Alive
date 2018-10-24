@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
 
       case 'venue':
         let venue: string = form.value['searchValue'];
-        this.router.navigate(['artists/' + venue]);
+        this.router.navigate(['venues/' + venue]);
         break;
 
       case 'location':
@@ -41,15 +41,15 @@ export class AppComponent implements OnInit {
     }
   }
   ngOnInit() {
-    let lng;
-    let lat;
+    let lng: any ;
+    let lat: any ;
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(displayLocationInfo);
-    }
-
-    function displayLocationInfo(position) {
-      lng = position.coords.longitude;
-      lat = position.coords.latitude;
+      navigator.geolocation.getCurrentPosition(function(position) {
+        console.log(position);
+        lng = position.coords.longitude;
+        lat = position.coords.latitude;
+        return console.log(lng, lat);
+      });
     }
   }
 }
