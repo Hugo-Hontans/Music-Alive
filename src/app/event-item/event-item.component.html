@@ -2,7 +2,7 @@
 
   <div class="d-flex w-100 justify-content-between">
 
-    <h2><a href="{{ oneEvent.performance[0].artist.uri }}">{{ oneEvent.performance[0].artist.displayName }}</a></h2>
+    <h2><a routerLink="../../artistcontent/{{oneEvent.performance[0].artist.displayName}}">{{ oneEvent.performance[0].artist.displayName }}</a></h2>
     <p>{{ oneEvent.type }} at {{ oneEvent.start.datetime | date:'shortTime'}}</p>
   </div>
   <p> {{ oneEvent.start.datetime | date:'fullDate' }} {{ oneEvent.start.date }}</p>
