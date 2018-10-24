@@ -55,7 +55,6 @@ export class AppComponent implements OnInit {
   displayLocationInfo = (position) => {
     this.myLng = position.coords.longitude;
     this.myLat = position.coords.latitude;
-    console.log("lng: " + this.myLng + " lat: " + this.myLat)
     this.geoLoc=true;
   }
 
