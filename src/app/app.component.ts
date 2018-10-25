@@ -1,7 +1,8 @@
-import { Component, Injectable, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit} from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { SongkickService } from './services/songkick.service';
 import { Router } from '@angular/router';
+import { LocationService } from './services/location.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,12 +10,20 @@ import { Router } from '@angular/router';
 })
 @Injectable()
 export class AppComponent implements OnInit {
+
   artistName;
   performed = false;
   title = 'easy-musique';
   response;
   type;
-  constructor(private service: SongkickService, private router: Router) {
+  myLng: number;
+  myLat: number;
+  geoLoc=false;
+  locationGeo;
+  objetLoc;
+  show=false;
+
+  constructor(private service: SongkickService, private router: Router, private locService:LocationService) {
     this.type = 'artist';
   }
 
@@ -45,15 +54,36 @@ export class AppComponent implements OnInit {
         this.router.navigate(['artists/' + error]);
         break;
     }
+
   }
-  ngOnInit() {
-    let lng: any;
-    let lat: any;
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function(position) {
-        lng = position.coords.longitude;
-        lat = position.coords.latitude;
+
+  displayLocationInfo = (position) => {
+    this.myLng = position.coords.longitude;
+    this.myLat = position.coords.latitude;
+    this.geoLoc=true;
+  }
+
+  getGeolocalisation() {
+    this.locService
+      .apiCallGeoloc(this.myLat,this.myLng)
+      .subscribe((res: any) => {
+        this.objetLoc=res.resultsPage.results.location[0].metroArea.id
+        this.show = true;
+        this.router.navigate(['locationcontent/'+this.objetLoc])
       });
+  }
+
+
+  ngOnInit() {
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(this.displayLocationInfo);
+    }    
+  }
+  ngDoCheck(){
+    if (this.geoLoc==true){
+    this.getGeolocalisation()
+    this.geoLoc=false;
     }
   }
 }

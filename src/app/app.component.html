@@ -1,5 +1,5 @@
-<a routerLink="artistcontent/hugo"><img class="logo" src="../../assets/img/logo.png"></a>
-
+<a *ngIf="show==true" routerLink="locationcontent/{{objetLoc}}"><img class="logo" src="../../assets/img/logo.png"></a>
+<a *ngIf="show==false" routerLink=""><img class="logo" src="../../assets/img/logo.png"></a>
 <img (click)="scrollToElement(target)" class="imghaut d-none d-md-block" src="../assets/img/arrow.png" alt="arrow image">
 
 
