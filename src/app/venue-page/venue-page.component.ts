@@ -6,11 +6,10 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./venue-page.component.css']
 })
 export class VenuePageComponent implements OnInit {
-  @Input() objetTest;
+  @Input() objetVenue;
   constructor() { }
 
   ngOnInit() {
-    console.log(this.objetTest);
   }
 
 }

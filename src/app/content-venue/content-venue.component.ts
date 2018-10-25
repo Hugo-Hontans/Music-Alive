@@ -39,7 +39,6 @@ export class ContentVenueComponent implements OnInit {
         } else {
           this.affichage2 = false;
         }
-        console.log(this.objetEventsOfVenue);
       });
   }
 

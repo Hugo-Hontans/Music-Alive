@@ -45,10 +45,8 @@ export class AppComponent implements OnInit {
     let lat: any ;
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
-        console.log(position);
         lng = position.coords.longitude;
         lat = position.coords.latitude;
-        return console.log(lng, lat);
       });
     }
   }
