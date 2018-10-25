@@ -24,6 +24,7 @@ import { LocationResultComponent } from './location-result/location-result.compo
 import { VenueResultComponent } from './venue-result/venue-result.component';
 import { ContentVenueComponent } from './content-venue/content-venue.component';
 import { VenuePageComponent } from './venue-page/venue-page.component';
+import { CartemapvenueComponent } from './cartemapvenue/cartemapvenue.component';
 
 const appRoutes: Routes = [
 {path: 'artistcontent/:id', component: ContentComponent},
@@ -49,7 +50,8 @@ const appRoutes: Routes = [
     LocationResultComponent,
     VenueResultComponent,
     ContentVenueComponent,
-    VenuePageComponent
+    VenuePageComponent,
+    CartemapvenueComponent
 
   ],
   imports: [
