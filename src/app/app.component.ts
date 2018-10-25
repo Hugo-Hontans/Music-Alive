@@ -41,8 +41,8 @@ export class AppComponent implements OnInit {
     }
   }
   ngOnInit() {
-    let lng: any ;
-    let lat: any ;
+    let lng: any;
+    let lat: any;
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
         lng = position.coords.longitude;

@@ -1,0 +1,782 @@
+{
+  "resultsPage": {
+    "status": "ok",
+    "results": {
+      "event": [
+        {
+          "type": "Concert",
+          "popularity": 0.009701,
+          "displayName": "Orelsan at Le Cube, Parc des Expositions (October 26, 2018)",
+          "status": "ok",
+          "performance": [
+            {
+              "displayName": "Orelsan",
+              "billingIndex": 1,
+              "billing": "headline",
+              "artist": {
+                "displayName": "Orelsan",
+                "identifier": [
+                  {
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:6cad3ce5-6380-4594-a8da-ae7d273b683d.json",
+                    "mbid": "6cad3ce5-6380-4594-a8da-ae7d273b683d"
+                  }
+                ],
+                "uri": "http://www.songkick.com/artists/976593-orelsan?utm_source=51137&utm_medium=partner",
+                "id": 976593
+              },
+              "id": 65533949
+            }
+          ],
+          "ageRestriction": null,
+          "start": {
+            "datetime": "2018-10-26T20:30:00+0200",
+            "time": "20:30:00",
+            "date": "2018-10-26"
+          },
+          "location": {
+            "city": "Troyes, France",
+            "lat": 48.2891303,
+            "lng": 4.0731465
+          },
+          "uri": "http://www.songkick.com/concerts/34125314-orelsan-at-le-cube-parc-des-expositions?utm_source=51137&utm_medium=partner",
+          "id": 34125314,
+          "venue": {
+            "displayName": "Le Cube, Parc des Expositions",
+            "lat": 48.2891303,
+            "lng": 4.0731465,
+            "metroArea": {
+              "displayName": "Troyes",
+              "country": { "displayName": "France" },
+              "uri": "http://www.songkick.com/metro_areas/28933-france-troyes?utm_source=51137&utm_medium=partner",
+              "id": 28933
+            },
+            "uri": "http://www.songkick.com/venues/533461-le-cube-parc-des-expositions?utm_source=51137&utm_medium=partner",
+            "id": 533461
+          }
+        },
+        {
+          "id": 34347754,
+          "displayName": "Festival Insolent 2018",
+          "type": "Festival",
+          "uri": "http://www.songkick.com/festivals/133641-insolent/id/34347754-festival-insolent-2018?utm_source=51137&utm_medium=partner",
+          "status": "ok",
+          "popularity": 0.010046,
+          "start": {
+            "date": "2018-10-27",
+            "datetime": "2018-10-27T18:00:00+0200",
+            "time": "18:00:00"
+          },
+          "performance": [
+            {
+              "id": 66472539,
+              "displayName": "Orelsan",
+              "billing": "headline",
+              "billingIndex": 1,
+              "artist": {
+                "id": 976593,
+                "displayName": "Orelsan",
+                "uri": "http://www.songkick.com/artists/976593-orelsan?utm_source=51137&utm_medium=partner",
+                "identifier": [
+                  {
+                    "mbid": "6cad3ce5-6380-4594-a8da-ae7d273b683d",
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:6cad3ce5-6380-4594-a8da-ae7d273b683d.json"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 65918704,
+              "displayName": "Chill Bump",
+              "billing": "headline",
+              "billingIndex": 2,
+              "artist": {
+                "id": 5736609,
+                "displayName": "Chill Bump",
+                "uri": "http://www.songkick.com/artists/5736609-chill-bump?utm_source=51137&utm_medium=partner",
+                "identifier": [
+                  {
+                    "mbid": "7f9d3622-6e3e-4bd5-9a36-261eecbd30e5",
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:7f9d3622-6e3e-4bd5-9a36-261eecbd30e5.json"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 65918719,
+              "displayName": "Eddy De Pretto",
+              "billing": "headline",
+              "billingIndex": 3,
+              "artist": {
+                "id": 7772384,
+                "displayName": "Eddy De Pretto",
+                "uri": "http://www.songkick.com/artists/7772384-eddy-de-pretto?utm_source=51137&utm_medium=partner",
+                "identifier": [
+                  {
+                    "mbid": "f7431a56-ef33-4d93-9676-4492f9fb18cb",
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:f7431a56-ef33-4d93-9676-4492f9fb18cb.json"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 65918709,
+              "displayName": "Fixpen Sill",
+              "billing": "headline",
+              "billingIndex": 4,
+              "artist": {
+                "id": 4961363,
+                "displayName": "Fixpen Sill",
+                "uri": "http://www.songkick.com/artists/4961363-fixpen-sill?utm_source=51137&utm_medium=partner",
+                "identifier": [
+                  {
+                    "mbid": "f6fde9b6-10fe-47c0-a23e-3d1f34144cbb",
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:f6fde9b6-10fe-47c0-a23e-3d1f34144cbb.json"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 65918714,
+              "displayName": "Biffty",
+              "billing": "headline",
+              "billingIndex": 5,
+              "artist": {
+                "id": 9178269,
+                "displayName": "Biffty",
+                "uri": "http://www.songkick.com/artists/9178269-biffty?utm_source=51137&utm_medium=partner",
+                "identifier": [
+                  {
+                    "mbid": "1a3042f3-7a2f-48a5-a0e3-a3da63f07aca",
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:1a3042f3-7a2f-48a5-a0e3-a3da63f07aca.json"
+                  }
+                ]
+              }
+            }
+          ],
+          "ageRestriction": null,
+          "venue": {
+            "id": 80885,
+            "displayName": "Parc Des Expositions",
+            "uri": "http://www.songkick.com/venues/80885-parc-des-expositions?utm_source=51137&utm_medium=partner",
+            "metroArea": {
+              "displayName": "Lorient",
+              "country": { "displayName": "France" },
+              "id": 28888,
+              "uri": "http://www.songkick.com/metro_areas/28888-france-lorient?utm_source=51137&utm_medium=partner"
+            },
+            "lat": 47.74812,
+            "lng": -3.35926
+          },
+          "location": {
+            "city": "Lorient, France",
+            "lat": 47.74812,
+            "lng": -3.35926
+          },
+          "end": { "date": "2018-10-27", "time": null, "datetime": null },
+          "series": { "displayName": "Festival Insolent" }
+        },
+        {
+          "type": "Concert",
+          "popularity": 0.010031,
+          "displayName": "Orelsan with Romeo Elvis, Fixpen Sill, Eddy De Pretto, and 2 more… at Parc des Expositions, Lann-Sévelin (October 27, 2018)",
+          "status": "ok",
+          "performance": [
+            {
+              "displayName": "Orelsan",
+              "billingIndex": 1,
+              "billing": "headline",
+              "artist": {
+                "displayName": "Orelsan",
+                "identifier": [
+                  {
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:6cad3ce5-6380-4594-a8da-ae7d273b683d.json",
+                    "mbid": "6cad3ce5-6380-4594-a8da-ae7d273b683d"
+                  }
+                ],
+                "uri": "http://www.songkick.com/artists/976593-orelsan?utm_source=51137&utm_medium=partner",
+                "id": 976593
+              },
+              "id": 65877214
+            },
+            {
+              "displayName": "Romeo Elvis",
+              "billingIndex": 2,
+              "billing": "support",
+              "artist": {
+                "displayName": "Romeo Elvis",
+                "identifier": [
+                  {
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:b6e08f19-dca8-4009-aefe-9feb9f1aa1f2.json",
+                    "mbid": "b6e08f19-dca8-4009-aefe-9feb9f1aa1f2"
+                  }
+                ],
+                "uri": "http://www.songkick.com/artists/7752569-romeo-elvis?utm_source=51137&utm_medium=partner",
+                "id": 7752569
+              },
+              "id": 65877204
+            },
+            {
+              "displayName": "Fixpen Sill",
+              "billingIndex": 3,
+              "billing": "support",
+              "artist": {
+                "displayName": "Fixpen Sill",
+                "identifier": [
+                  {
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:f6fde9b6-10fe-47c0-a23e-3d1f34144cbb.json",
+                    "mbid": "f6fde9b6-10fe-47c0-a23e-3d1f34144cbb"
+                  }
+                ],
+                "uri": "http://www.songkick.com/artists/4961363-fixpen-sill?utm_source=51137&utm_medium=partner",
+                "id": 4961363
+              },
+              "id": 65877209
+            },
+            {
+              "displayName": "Eddy De Pretto",
+              "billingIndex": 4,
+              "billing": "support",
+              "artist": {
+                "displayName": "Eddy De Pretto",
+                "identifier": [
+                  {
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:f7431a56-ef33-4d93-9676-4492f9fb18cb.json",
+                    "mbid": "f7431a56-ef33-4d93-9676-4492f9fb18cb"
+                  }
+                ],
+                "uri": "http://www.songkick.com/artists/7772384-eddy-de-pretto?utm_source=51137&utm_medium=partner",
+                "id": 7772384
+              },
+              "id": 65877219
+            },
+            {
+              "displayName": "Chill Bump",
+              "billingIndex": 5,
+              "billing": "support",
+              "artist": {
+                "displayName": "Chill Bump",
+                "identifier": [
+                  {
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:7f9d3622-6e3e-4bd5-9a36-261eecbd30e5.json",
+                    "mbid": "7f9d3622-6e3e-4bd5-9a36-261eecbd30e5"
+                  }
+                ],
+                "uri": "http://www.songkick.com/artists/5736609-chill-bump?utm_source=51137&utm_medium=partner",
+                "id": 5736609
+              },
+              "id": 65877224
+            },
+            {
+              "displayName": "Spider Zed",
+              "billingIndex": 6,
+              "billing": "support",
+              "artist": {
+                "displayName": "Spider Zed",
+                "identifier": [
+                  {
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:bf50defb-258b-4ba3-a8f1-bb8da21a9e25.json",
+                    "mbid": "bf50defb-258b-4ba3-a8f1-bb8da21a9e25"
+                  }
+                ],
+                "uri": "http://www.songkick.com/artists/9279769-spider-zed?utm_source=51137&utm_medium=partner",
+                "id": 9279769
+              },
+              "id": 66236529
+            }
+          ],
+          "ageRestriction": null,
+          "start": {
+            "datetime": "2018-10-27T18:00:00+0200",
+            "time": "18:00:00",
+            "date": "2018-10-27"
+          },
+          "location": {
+            "city": "Lanester, France",
+            "lat": 47.7774775,
+            "lng": -3.3466638
+          },
+          "uri": "http://www.songkick.com/concerts/34324704-orelsan-at-parc-des-expositions-lannsevelin?utm_source=51137&utm_medium=partner",
+          "id": 34324704,
+          "venue": {
+            "displayName": "Parc des Expositions, Lann-Sévelin",
+            "lat": 47.7774775,
+            "lng": -3.3466638,
+            "metroArea": {
+              "displayName": "Lorient",
+              "country": { "displayName": "France" },
+              "uri": "http://www.songkick.com/metro_areas/28888-france-lorient?utm_source=51137&utm_medium=partner",
+              "id": 28888
+            },
+            "uri": "http://www.songkick.com/venues/332611-parc-des-expositions-lannsevelin?utm_source=51137&utm_medium=partner",
+            "id": 332611
+          }
+        },
+        {
+          "type": "Concert",
+          "popularity": 0.008321,
+          "displayName": "Orelsan at Halle Tony Garnier (November 17, 2018)",
+          "status": "ok",
+          "performance": [
+            {
+              "displayName": "Orelsan",
+              "billingIndex": 1,
+              "billing": "headline",
+              "artist": {
+                "displayName": "Orelsan",
+                "identifier": [
+                  {
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:6cad3ce5-6380-4594-a8da-ae7d273b683d.json",
+                    "mbid": "6cad3ce5-6380-4594-a8da-ae7d273b683d"
+                  }
+                ],
+                "uri": "http://www.songkick.com/artists/976593-orelsan?utm_source=51137&utm_medium=partner",
+                "id": 976593
+              },
+              "id": 61955219
+            }
+          ],
+          "ageRestriction": null,
+          "start": {
+            "datetime": "2018-11-17T20:30:00+0100",
+            "time": "20:30:00",
+            "date": "2018-11-17"
+          },
+          "location": {
+            "city": "Lyon, France",
+            "lat": 45.764043,
+            "lng": 4.835659
+          },
+          "uri": "http://www.songkick.com/concerts/32147599-orelsan-at-halle-tony-garnier?utm_source=51137&utm_medium=partner",
+          "id": 32147599,
+          "venue": {
+            "displayName": "Halle Tony Garnier",
+            "lat": 45.764043,
+            "lng": 4.835659,
+            "metroArea": {
+              "displayName": "Lyon",
+              "country": { "displayName": "France" },
+              "uri": "http://www.songkick.com/metro_areas/28889-france-lyon?utm_source=51137&utm_medium=partner",
+              "id": 28889
+            },
+            "uri": "http://www.songkick.com/venues/29610-halle-tony-garnier?utm_source=51137&utm_medium=partner",
+            "id": 29610
+          }
+        },
+        {
+          "id": 35296829,
+          "displayName": "Orelsan at Zénith de Lille (November 20, 2018)",
+          "type": "Concert",
+          "uri": "http://www.songkick.com/concerts/35296829-orelsan-at-zenith-de-lille?utm_source=51137&utm_medium=partner",
+          "status": "ok",
+          "popularity": 0.010526,
+          "start": {
+            "date": "2018-11-20",
+            "datetime": "2018-11-20T20:00:00+0100",
+            "time": "20:00:00"
+          },
+          "performance": [
+            {
+              "id": 67571359,
+              "displayName": "Orelsan",
+              "billing": "headline",
+              "billingIndex": 1,
+              "artist": {
+                "id": 976593,
+                "displayName": "Orelsan",
+                "uri": "http://www.songkick.com/artists/976593-orelsan?utm_source=51137&utm_medium=partner",
+                "identifier": [
+                  {
+                    "mbid": "6cad3ce5-6380-4594-a8da-ae7d273b683d",
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:6cad3ce5-6380-4594-a8da-ae7d273b683d.json"
+                  }
+                ]
+              }
+            }
+          ],
+          "ageRestriction": null,
+          "flaggedAsEnded": false,
+          "venue": {
+            "id": 514631,
+            "displayName": "Zénith de Lille",
+            "uri": "http://www.songkick.com/venues/514631-zenith-de-lille?utm_source=51137&utm_medium=partner",
+            "metroArea": {
+              "displayName": "Lille",
+              "country": { "displayName": "France" },
+              "id": 28886,
+              "uri": "http://www.songkick.com/metro_areas/28886-france-lille?utm_source=51137&utm_medium=partner"
+            },
+            "lat": 50.63271,
+            "lng": 3.07805
+          },
+          "location": {
+            "city": "Lille, France",
+            "lat": 50.63271,
+            "lng": 3.07805
+          }
+        },
+        {
+          "type": "Concert",
+          "popularity": 0.009779,
+          "displayName": "Orelsan at Zénith (November 22, 2018)",
+          "status": "ok",
+          "performance": [
+            {
+              "displayName": "Orelsan",
+              "billingIndex": 1,
+              "billing": "headline",
+              "artist": {
+                "displayName": "Orelsan",
+                "identifier": [
+                  {
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:6cad3ce5-6380-4594-a8da-ae7d273b683d.json",
+                    "mbid": "6cad3ce5-6380-4594-a8da-ae7d273b683d"
+                  }
+                ],
+                "uri": "http://www.songkick.com/artists/976593-orelsan?utm_source=51137&utm_medium=partner",
+                "id": 976593
+              },
+              "id": 65767019
+            }
+          ],
+          "ageRestriction": null,
+          "start": {
+            "datetime": "2018-11-22T20:00:00+0100",
+            "time": "20:00:00",
+            "date": "2018-11-22"
+          },
+          "location": {
+            "city": "Caen, France",
+            "lat": 49.1691926,
+            "lng": -0.3822182
+          },
+          "uri": "http://www.songkick.com/concerts/34260884-orelsan-at-zenith?utm_source=51137&utm_medium=partner",
+          "id": 34260884,
+          "venue": {
+            "displayName": "Zénith",
+            "lat": 49.1691926,
+            "lng": -0.3822182,
+            "metroArea": {
+              "displayName": "Caen",
+              "country": { "displayName": "France" },
+              "uri": "http://www.songkick.com/metro_areas/28855-france-caen?utm_source=51137&utm_medium=partner",
+              "id": 28855
+            },
+            "uri": "http://www.songkick.com/venues/77044-zenith?utm_source=51137&utm_medium=partner",
+            "id": 77044
+          }
+        },
+        {
+          "type": "Concert",
+          "popularity": 0.009779,
+          "displayName": "Orelsan at Antarès (November 23, 2018)",
+          "status": "ok",
+          "performance": [
+            {
+              "displayName": "Orelsan",
+              "billingIndex": 1,
+              "billing": "headline",
+              "artist": {
+                "displayName": "Orelsan",
+                "identifier": [
+                  {
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:6cad3ce5-6380-4594-a8da-ae7d273b683d.json",
+                    "mbid": "6cad3ce5-6380-4594-a8da-ae7d273b683d"
+                  }
+                ],
+                "uri": "http://www.songkick.com/artists/976593-orelsan?utm_source=51137&utm_medium=partner",
+                "id": 976593
+              },
+              "id": 65767034
+            }
+          ],
+          "ageRestriction": null,
+          "start": {
+            "datetime": "2018-11-23T20:00:00+0100",
+            "time": "20:00:00",
+            "date": "2018-11-23"
+          },
+          "location": {
+            "city": "Le Mans, France",
+            "lat": 47.9567799,
+            "lng": 0.2266695
+          },
+          "uri": "http://www.songkick.com/concerts/34260894-orelsan-at-antares?utm_source=51137&utm_medium=partner",
+          "id": 34260894,
+          "venue": {
+            "displayName": "Antarès",
+            "lat": 47.9567799,
+            "lng": 0.2266695,
+            "metroArea": {
+              "displayName": "Le Mans",
+              "country": { "displayName": "France" },
+              "uri": "http://www.songkick.com/metro_areas/28884-france-le-mans?utm_source=51137&utm_medium=partner",
+              "id": 28884
+            },
+            "uri": "http://www.songkick.com/venues/56859-antares?utm_source=51137&utm_medium=partner",
+            "id": 56859
+          }
+        },
+        {
+          "type": "Concert",
+          "popularity": 0.009779,
+          "displayName": "Orelsan at Zénith de Limoges Métropole (November 28, 2018)",
+          "status": "ok",
+          "performance": [
+            {
+              "displayName": "Orelsan",
+              "billingIndex": 1,
+              "billing": "headline",
+              "artist": {
+                "displayName": "Orelsan",
+                "identifier": [
+                  {
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:6cad3ce5-6380-4594-a8da-ae7d273b683d.json",
+                    "mbid": "6cad3ce5-6380-4594-a8da-ae7d273b683d"
+                  }
+                ],
+                "uri": "http://www.songkick.com/artists/976593-orelsan?utm_source=51137&utm_medium=partner",
+                "id": 976593
+              },
+              "id": 65767049
+            }
+          ],
+          "ageRestriction": null,
+          "start": {
+            "datetime": "2018-11-28T20:00:00+0100",
+            "time": "20:00:00",
+            "date": "2018-11-28"
+          },
+          "location": {
+            "city": "Limoges, France",
+            "lat": 45.8612326,
+            "lng": 1.2811364
+          },
+          "uri": "http://www.songkick.com/concerts/34260904-orelsan-at-zenith-de-limoges-metropole?utm_source=51137&utm_medium=partner",
+          "id": 34260904,
+          "venue": {
+            "displayName": "Zénith de Limoges Métropole",
+            "lat": 45.8612326,
+            "lng": 1.2811364,
+            "metroArea": {
+              "displayName": "Limoges",
+              "country": { "displayName": "France" },
+              "uri": "http://www.songkick.com/metro_areas/28887-france-limoges?utm_source=51137&utm_medium=partner",
+              "id": 28887
+            },
+            "uri": "http://www.songkick.com/venues/516481-zenith-de-limoges-metropole?utm_source=51137&utm_medium=partner",
+            "id": 516481
+          }
+        },
+        {
+          "type": "Concert",
+          "popularity": 0.009779,
+          "displayName": "Orelsan at Zénith Pyrenees (November 29, 2018)",
+          "status": "ok",
+          "performance": [
+            {
+              "displayName": "Orelsan",
+              "billingIndex": 1,
+              "billing": "headline",
+              "artist": {
+                "displayName": "Orelsan",
+                "identifier": [
+                  {
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:6cad3ce5-6380-4594-a8da-ae7d273b683d.json",
+                    "mbid": "6cad3ce5-6380-4594-a8da-ae7d273b683d"
+                  }
+                ],
+                "uri": "http://www.songkick.com/artists/976593-orelsan?utm_source=51137&utm_medium=partner",
+                "id": 976593
+              },
+              "id": 65767054
+            }
+          ],
+          "ageRestriction": null,
+          "start": {
+            "datetime": "2018-11-29T20:00:00+0100",
+            "time": "20:00:00",
+            "date": "2018-11-29"
+          },
+          "location": {
+            "city": "Pau, France",
+            "lat": 43.332765,
+            "lng": -0.367726
+          },
+          "uri": "http://www.songkick.com/concerts/34260909-orelsan-at-zenith-pyrenees?utm_source=51137&utm_medium=partner",
+          "id": 34260909,
+          "venue": {
+            "displayName": "Zénith Pyrenees",
+            "lat": 43.332765,
+            "lng": -0.367726,
+            "metroArea": {
+              "displayName": "Pau",
+              "country": { "displayName": "France" },
+              "uri": "http://www.songkick.com/metro_areas/28910-france-pau?utm_source=51137&utm_medium=partner",
+              "id": 28910
+            },
+            "uri": "http://www.songkick.com/venues/80825-zenith-pyrenees?utm_source=51137&utm_medium=partner",
+            "id": 80825
+          }
+        },
+        {
+          "id": 35727264,
+          "displayName": "Orelsan at Arkea Arena (November 30, 2018)",
+          "type": "Concert",
+          "uri": "http://www.songkick.com/concerts/35727264-orelsan-at-arkea-arena?utm_source=51137&utm_medium=partner",
+          "status": "ok",
+          "popularity": 0.010923,
+          "start": {
+            "date": "2018-11-30",
+            "datetime": "2018-11-30T20:00:00+0100",
+            "time": "20:00:00"
+          },
+          "performance": [
+            {
+              "id": 68293294,
+              "displayName": "Orelsan",
+              "billing": "headline",
+              "billingIndex": 1,
+              "artist": {
+                "id": 976593,
+                "displayName": "Orelsan",
+                "uri": "http://www.songkick.com/artists/976593-orelsan?utm_source=51137&utm_medium=partner",
+                "identifier": [
+                  {
+                    "mbid": "6cad3ce5-6380-4594-a8da-ae7d273b683d",
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:6cad3ce5-6380-4594-a8da-ae7d273b683d.json"
+                  }
+                ]
+              }
+            }
+          ],
+          "ageRestriction": null,
+          "flaggedAsEnded": false,
+          "venue": {
+            "id": 4071269,
+            "displayName": "Arkea Arena",
+            "uri": "http://www.songkick.com/venues/4071269-arkea-arena?utm_source=51137&utm_medium=partner",
+            "metroArea": {
+              "displayName": "Gironde",
+              "country": { "displayName": "France" },
+              "id": 168319,
+              "uri": "http://www.songkick.com/metro_areas/168319-france-gironde?utm_source=51137&utm_medium=partner"
+            },
+            "lat": 44.82468,
+            "lng": -0.53171
+          },
+          "location": {
+            "city": "Floirac, France",
+            "lat": 44.82468,
+            "lng": -0.53171
+          }
+        },
+        {
+          "id": 35296844,
+          "displayName": "Orelsan at AccorHotels Arena POPB (December 5, 2018)",
+          "type": "Concert",
+          "uri": "http://www.songkick.com/concerts/35296844-orelsan-at-accorhotels-arena-popb?utm_source=51137&utm_medium=partner",
+          "status": "ok",
+          "popularity": 0.010526,
+          "start": {
+            "date": "2018-12-05",
+            "datetime": "2018-12-05T20:00:00+0100",
+            "time": "20:00:00"
+          },
+          "performance": [
+            {
+              "id": 67571389,
+              "displayName": "Orelsan",
+              "billing": "headline",
+              "billingIndex": 1,
+              "artist": {
+                "id": 976593,
+                "displayName": "Orelsan",
+                "uri": "http://www.songkick.com/artists/976593-orelsan?utm_source=51137&utm_medium=partner",
+                "identifier": [
+                  {
+                    "mbid": "6cad3ce5-6380-4594-a8da-ae7d273b683d",
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:6cad3ce5-6380-4594-a8da-ae7d273b683d.json"
+                  }
+                ]
+              }
+            }
+          ],
+          "ageRestriction": null,
+          "flaggedAsEnded": false,
+          "venue": {
+            "id": 3120894,
+            "displayName": "AccorHotels Arena POPB",
+            "uri": "http://www.songkick.com/venues/3120894-accorhotels-arena-popb?utm_source=51137&utm_medium=partner",
+            "metroArea": {
+              "displayName": "Paris",
+              "country": { "displayName": "France" },
+              "id": 28909,
+              "uri": "http://www.songkick.com/metro_areas/28909-france-paris?utm_source=51137&utm_medium=partner"
+            },
+            "lat": 48.83917,
+            "lng": 2.37823
+          },
+          "location": {
+            "city": "Paris, France",
+            "lat": 48.83917,
+            "lng": 2.37823
+          }
+        },
+        {
+          "id": 34260924,
+          "displayName": "Orelsan at AccorHotels Arena POPB (December 6, 2018)",
+          "type": "Concert",
+          "uri": "http://www.songkick.com/concerts/34260924-orelsan-at-accorhotels-arena-popb?utm_source=51137&utm_medium=partner",
+          "status": "ok",
+          "popularity": 0.010046,
+          "start": {
+            "date": "2018-12-06",
+            "datetime": "2018-12-06T20:00:00+0100",
+            "time": "20:00:00"
+          },
+          "performance": [
+            {
+              "id": 65767089,
+              "displayName": "Orelsan",
+              "billing": "headline",
+              "billingIndex": 1,
+              "artist": {
+                "id": 976593,
+                "displayName": "Orelsan",
+                "uri": "http://www.songkick.com/artists/976593-orelsan?utm_source=51137&utm_medium=partner",
+                "identifier": [
+                  {
+                    "mbid": "6cad3ce5-6380-4594-a8da-ae7d273b683d",
+                    "href": "http://api.songkick.com/api/3.0/artists/mbid:6cad3ce5-6380-4594-a8da-ae7d273b683d.json"
+                  }
+                ]
+              }
+            }
+          ],
+          "ageRestriction": null,
+          "venue": {
+            "id": 3120894,
+            "displayName": "AccorHotels Arena POPB",
+            "uri": "http://www.songkick.com/venues/3120894-accorhotels-arena-popb?utm_source=51137&utm_medium=partner",
+            "metroArea": {
+              "displayName": "Paris",
+              "country": { "displayName": "France" },
+              "id": 28909,
+              "uri": "http://www.songkick.com/metro_areas/28909-france-paris?utm_source=51137&utm_medium=partner"
+            },
+            "lat": 48.83917,
+            "lng": 2.37823
+          },
+          "location": {
+            "city": "Paris, France",
+            "lat": 48.83917,
+            "lng": 2.37823
+          }
+        }
+      ]
+    },
+    "perPage": 50,
+    "page": 1,
+    "totalEntries": 12
+  }
+}

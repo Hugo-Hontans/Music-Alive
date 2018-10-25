@@ -25,7 +25,6 @@ export class ContentVenueComponent implements OnInit {
       .subscribe((res: any) => {
         this.objetVenue = res;
         this.affichage = true;
-        // console.log(this.objetVenue);
       });
   }
 
