@@ -2,9 +2,8 @@
 
   <div class="d-flex w-100 justify-content-between">
 
-    <h2><a routerLink="../../artistcontent/{{oneEvent.performance[0].artist.displayName}}">{{
-        oneEvent.performance[0].artist.displayName }}</a></h2>
-    <p>{{ oneEvent.type }} at {{ oneEvent.start.datetime | date:'shortTime'}}</p>
+    <h2><a routerLink="../../artistcontent/{{oneEvent.performance[0].artist.displayName}}">{{ oneEvent.performance[0].artist.displayName }}</a></h2>
+    <p>{{ oneEvent.type }}<span *ngIf="oneEvent.start.datetime != null"> at {{ oneEvent.start.datetime | date:'shortTime'}}</span></p>
   </div>
   <p> {{ oneEvent.start.datetime | date:'fullDate' }} {{ oneEvent.start.date }}</p>
   <!-- pour un beau calendrier...<p> {{ oneEvent.start.date }}</p> -->

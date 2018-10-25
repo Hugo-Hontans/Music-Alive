@@ -17,6 +17,12 @@ export class AppComponent implements OnInit {
   constructor(private service: SongkickService, private router: Router) {
     this.type = 'artist';
   }
+
+  scrollToElement($element): void {
+    console.log($element);
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
   search(form: NgForm) {
     switch (form.value['type']) {
       case 'artist':
