@@ -1,4 +1,6 @@
+import { SongkickService } from './../services/songkick.service';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-venue-page',
