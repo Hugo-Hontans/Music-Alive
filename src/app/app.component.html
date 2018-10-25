@@ -1,4 +1,18 @@
 <a routerLink="artistcontent/hugo"><img class="logo" src="../../assets/img/logo.png"></a>
+
+<div class="container homemessage">
+  <div class="text-wrapper">
+    <div class="first-word row justify-content-start">Find your Best</div>
+    <div class="animated-words row justify-content-center">
+        <span class="animated-word row justify-content-center">Concert</span>
+        <span class="animated-word row justify-content-center">Artist</span>
+        <span class="animated-word row justify-content-center">Place</span>
+        <span class="animated-word row justify-content-center">Festival</span>
+    </div>
+     <div class="last-word row justify-content-end">Around the world</div>
+  </div>
+</div>
+
 <div class=" box container-4 ">
     <form (ngSubmit)="search(f)" #f="ngForm">
       <select class="select" name="type" [(ngModel)]="type">
