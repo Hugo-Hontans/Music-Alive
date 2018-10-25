@@ -10,7 +10,10 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 export class ContentVenueComponent implements OnInit {
   venueResult;
   objetVenue;
+  objetEventsOfVenue;
   affichage = false;
+  affichage2 = false;
+
   constructor(
     private songkickservice: SongkickService,
     private route: ActivatedRoute
@@ -22,16 +25,29 @@ export class ContentVenueComponent implements OnInit {
       .subscribe((res: any) => {
         this.objetVenue = res;
         this.affichage = true;
-        console.log(this.objetVenue);
+        // console.log(this.objetVenue);
+      });
+  }
+
+  searchEventsOfVenue() {
+    this.songkickservice
+      .searchEventsOfVenue(this.venueResult)
+      .subscribe((res: any) => {
+        this.objetEventsOfVenue = res;
+        if (this.objetEventsOfVenue.resultsPage.totalEntries != 0) {
+          this.affichage2 = true;
+        } else {
+          this.affichage2 = false;
+        }
+        console.log(this.objetEventsOfVenue);
       });
   }
 
   ngOnInit() {
-  this.route.params.subscribe((params: ParamMap) => {
-    this.venueResult = params['id'];
-    this.searchVenueDetails();
+    this.route.params.subscribe((params: ParamMap) => {
+      this.venueResult = params['id'];
+      this.searchVenueDetails();
+      this.searchEventsOfVenue();
     });
-
   }
-
 }
