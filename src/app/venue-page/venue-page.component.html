@@ -1,0 +1,10 @@
+<div class="results">
+  <h1 class="text-center">{{ objetVenue.resultsPage.results.venue.displayName }}</h1>
+  <p class="text-center" *ngIf="objetVenue.resultsPage.results.venue.description != null && objetVenue.resultsPage.results.venue.description != ''">{{ objetTest.resultsPage.results.venue.description }}</p>
+  <p class="text-center">Adress : {{objetVenue.resultsPage.results.venue.street}}
+  		  {{objetVenue.resultsPage.results.venue.city.displayName}}
+	      {{objetVenue.resultsPage.results.venue.zip}}
+	      {{objetVenue.resultsPage.results.venue.city.country.displayName}}</p>
+  <p class="text-center" *ngIf="objetVenue.resultsPage.results.venue.phone != null && objetVenue.resultsPage.results.venue.phone != ''">Call : {{objetVenue.resultsPage.results.venue.phone}}</p>
+  <p class="text-center"><a target="_blank" *ngIf="objetVenue.resultsPage.results.venue.website != null && objetVenue.resultsPage.results.venue.website != ''" href="{{objetVenue.resultsPage.results.venue.website}}">View website</a></p>
+</div>

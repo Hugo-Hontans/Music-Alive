@@ -9,7 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class EventlistComponent implements OnInit {
   @Input()
   objetTest;
-  //parametre de pagination
+  // parametre de pagination
   p: number[] = [];
   id: number[] = [];
 

@@ -1,0 +1,14 @@
+<div *ngIf="affichage==true" class="container">
+  <div class="row">
+    <div *ngFor="let l of objetVenue.resultsPage.results.venue" class="card border-info mb6 col-lg-3 col-sm-6 col-6"
+      style="max-width: 18rem;">
+      <div class="card-header">{{l.displayName}}</div>
+      <div class="card-body text-info">
+        <h5 class="card-title">Country : {{l.city.displayName}} {{l.city.country.displayName}}</h5>
+        <a routerLink="../../venuecontent/{{ l.name }}"></a><a class="btn btn-outline-info" role="button" id="moredetails"
+          routerLink="../../venuescontent/{{l.id}}"><small>More
+            details</small></a>
+      </div>
+    </div>
+  </div>
+</div>

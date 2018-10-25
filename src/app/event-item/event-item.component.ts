@@ -14,3 +14,4 @@ export class EventItemComponent implements OnInit {
   ngOnInit() {
   }
 }
+//venue.metroArea.id
