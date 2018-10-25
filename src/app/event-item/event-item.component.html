@@ -9,9 +9,15 @@
   <p> {{ oneEvent.start.datetime | date:'fullDate' }} {{ oneEvent.start.date }}</p>
   <!-- pour un beau calendrier...<p> {{ oneEvent.start.date }}</p> -->
   <h5 class="mb-1">{{ oneEvent.displayName }}</h5>
-  <p class="mt-3 mb-1"><a routerLink="../../venuescontent/{{ oneEvent.venue.id }}">{{
-      oneEvent.venue.displayName }}</a> à {{
-    oneEvent.venue.metroArea.displayName }}</p>
+  <p class="mt-3 mb-1">
+    <a routerLink="../../venuescontent/{{ oneEvent.venue.id }}">
+      {{
+      oneEvent.venue.displayName }}
+    </a>
+    à
+    <a routerLink="../../locationcontent/{{oneEvent.venue.metroArea.id}}">
+      {{
+      oneEvent.venue.metroArea.displayName }}</a></p>
   <div class="d-flex w-100 justify-content-end">
     <a class="btn btn-outline-info" role="button" id="moredetails" target="_blank" href="{{ oneEvent.uri }}"><small>Buy
         tickets</small></a>
