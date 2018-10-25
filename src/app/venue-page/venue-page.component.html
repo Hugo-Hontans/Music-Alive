@@ -1,9 +1,7 @@
-<div class="row">
-<div class="col-12 col-md-6">
+<div class="results">
   <h1 class="text-center">{{ objetTest.resultsPage.results.venue.displayName }}</h1>
-  <p class="text-center">{{ objetTest.resultsPage.results.venue.description }}</p>
-  <p class="text-center">phone : {{objetTest.resultsPage.results.venue.phone}}</p>
-  <p class="text-center">adress : {{objetTest.resultsPage.results.venue.street}} {{objetTest.resultsPage.results.venue.city.displayName}} {{objetTest.resultsPage.results.venue.city.country.displayName}}</p>
-  <a href="{{objetTest.resultsPage.results.venue.website}}">venue website</a>
-</div>
+  <p class="text-center" *ngIf="objetTest.resultsPage.results.venue.description" >{{ objetTest.resultsPage.results.venue.description }}</p>
+  <p class="text-center" *ngIf="objetTest.resultsPage.results.venue.phone" >phone : {{objetTest.resultsPage.results.venue.phone}}</p>
+  <p class="text-center" >adress : {{objetTest.resultsPage.results.venue.street}} {{objetTest.resultsPage.results.venue.city.displayName}} {{objetTest.resultsPage.results.venue.city.country.displayName}}</p>
+  <a class="text-center" *ngIf="objetTest.resultsPage.results.venue.website"  href="{{objetTest.resultsPage.results.venue.website}}">venue website</a>
 </div>
