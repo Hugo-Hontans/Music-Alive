@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
 @Component({
   selector: 'app-venue-page',
@@ -6,10 +10,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./venue-page.component.css']
 })
 export class VenuePageComponent implements OnInit {
-
+  @Input() objetTest;
   constructor() { }
 
   ngOnInit() {
+    console.log(this.objetTest);
   }
 
 }

@@ -4,9 +4,13 @@
     paginate: { itemsPerPage: 8, currentPage: p[i], id: id }"
       class="
       col-lg-3 col-6 no-gutters">
-      <a routerLink="../../artistcontent/{{ a.name }}"><img class="figure-img img-fluid rounded" src="{{ a.image[2]['#text'] }}" onerror="this.src='../../assets/img/etoile.png'"></a>
+      <a routerLink="../../artistcontent/{{ a.name }}">
+        <img class="figure-img img-fluid rounded" src="{{ a.image[2]['#text'] }}" onerror="this.src='../../assets/img/etoile.png'">
+      </a>
       <figcaption>
-        <a routerLink="../../artistcontent/{{ a.name }}"><h2>{{ a.name }}</h2></a>
+        <a routerLink="../../artistcontent/{{ a.name }}">
+          <h2>{{ a.name }}</h2>
+        </a>
         <h6 class="text">Listeners : {{ a.listeners }}</h6>
       </figcaption>
     </figure>

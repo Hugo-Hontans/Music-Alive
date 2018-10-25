@@ -15,7 +15,7 @@ export class ArtistpageComponent implements OnInit {
   affichageOnTour;
   similarArtist;
   summary;
-  errorMessage="";
+  errorMessage = '';
 
   constructor(
     private lastFmService: LastFMService,
@@ -23,8 +23,8 @@ export class ArtistpageComponent implements OnInit {
 
   searchMusic() {
     this.lastFmService.searchMusic(this.artistName).subscribe((res: any) => {
-      if( res.error==6){
-        this.errorMessage = this.artistName + " was not found. Please retry another request." ;
+      if (res.error === 6) {
+        this.errorMessage = this.artistName + ' was not found. Please retry another request.' ;
       }
       else {
         this.errorMessage = null;
@@ -32,9 +32,9 @@ export class ArtistpageComponent implements OnInit {
         this.image = res.artist.image[4]['#text'];
         this.summary = res.artist.bio.summary;
         this.similarArtist = res.artist.similar.artist;
-        if (this.affichage == false) {
+        if (this.affichage === false) {
           this.affichageOnTour = 'Not on tour';
-        } 
+        }
         else {
           this.affichageOnTour = 'On tour';
         }
@@ -42,16 +42,16 @@ export class ArtistpageComponent implements OnInit {
         const regex = /(<([^>]+)>)/gi;
         this.summary = this.summary.replace(regex, '');
         this.summary = this.summary.replace('Read more on Last.fm', '');
-        if (this.summary==" "){
-          this.summary="We don't know this artist's bio."
+        if (this.summary === ' ') {
+          this.summary = 'We don\'t know this artist\'s bio.';
         }
       }
     });
   }
 
-  ngOnInit(){
+  ngOnInit() {
   }
-  ngOnChanges() {  
+  ngOnChanges() {
     this.searchMusic();
   }
 }

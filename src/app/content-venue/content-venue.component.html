@@ -1,7 +1,10 @@
 <div class="content">
-<app-venue-page></app-venue-page>
+<app-venue-page [objetTest]="objetVenue" ></app-venue-page>
 <br>
-<app-cartemap *ngIf="affichage==true" [objetTest]="objetVenue"></app-cartemap>
-<br>
-<app-eventlist *ngIf="affichage==true" [objetTest]="objetVenue"></app-eventlist>
+	<app-cartemapvenue *ngIf="affichage==true" [objetVenue]="objetVenue"></app-cartemapvenue>
+	<br>
+  <app-eventlist *ngIf="affichage2==true" [objetTest]="objetEventsOfVenue"></app-eventlist>
 </div>
+
+
+
