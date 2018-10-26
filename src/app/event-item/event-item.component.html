@@ -17,6 +17,7 @@
     <a routerLink="../../locationcontent/{{oneEvent.venue.metroArea.id}}">
       {{
       oneEvent.venue.metroArea.displayName }}</a></p>
+  <button (click)="indexOfEvents()">View on the map</button>
   <div class="d-flex w-100 justify-content-end">
     <a class="btn btn-outline-info" role="button" id="moredetails" target="_blank" href="{{ oneEvent.uri }}"><small>Buy
         tickets</small></a>

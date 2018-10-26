@@ -17,5 +17,6 @@ export class EventlistComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 }
