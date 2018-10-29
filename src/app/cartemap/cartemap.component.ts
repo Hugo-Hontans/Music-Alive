@@ -11,11 +11,13 @@ export class CartemapComponent implements OnInit {
 
   @Input() objetTest;
   index;
+  @Input() affichageTitrePourLocation;
 
   //donner des positions; les variables sont à lire dans "[longitude]" et "[latitude]"
   //dans l'HTML afin de donner des positions sur la carte
   lat: number;
   lng: number;
+  isOpenBoolean:boolean[];
 
   constructor(private findindexservice : FindIndexService) {}
 

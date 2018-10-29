@@ -10,7 +10,4 @@ export class FindIndexService {
 
   constructor() { }
 
-  elliot(index){
-  	return this.index;
-  }
 }

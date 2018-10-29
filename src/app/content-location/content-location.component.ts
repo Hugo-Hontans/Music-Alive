@@ -9,10 +9,11 @@ import { SongkickService } from '../services/songkick.service';
 })
 export class ContentLocationComponent implements OnInit {
 
-	id = "28889";
+	  id;
     objetTest;
     // boolean pour eviter les erreurs de la console lors du chargement du component
     affichage = false;
+    affichageTitrePourLocation=true;
 
   constructor(private route: ActivatedRoute, private service: SongkickService) { }
 

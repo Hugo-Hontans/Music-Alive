@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { FindIndexService } from '../services/find-index.service'
+import { FindIndexService } from '../services/find-index.service';
+
 
 @Component({
   selector: 'app-event-item',
@@ -13,6 +14,7 @@ export class EventItemComponent implements OnInit {
   @Input() index;
 
   constructor(private findindexservice : FindIndexService) {}
+
 
   indexOfEvents(){
     this.findindexservice.index = this.index;

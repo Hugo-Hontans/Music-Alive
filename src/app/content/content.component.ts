@@ -15,6 +15,7 @@ export class ContentComponent implements OnInit {
   objetTest;
   // boolean pour eviter les erreurs de la console lors du chargement du component
   affichage = false;
+  affichageTitrePourLocation=false;
 
   constructor(private route: ActivatedRoute, private service: SongkickService) { }
 

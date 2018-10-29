@@ -1,11 +1,11 @@
-<agm-marker [longitude]="index.venue.lng" [latitude]="index.venue.lat">
-  <agm-info-window>
-    <div class="window">{{index.performance[0].displayName}} will be in {{index.location.city}},  
-      <a href="{{index.venue.uri}}">
-        {{index.venue.displayName}}
+<agm-marker [longitude]="oneEvent.venue.lng" [latitude]="oneEvent.venue.lat">
+  <agm-info-window [isOpen]="isOpenBoolean">
+    <div class="window"><a routerLink="../../artistcontent/{{oneEvent.performance[0].artist.displayName}}">{{oneEvent.performance[0].displayName}}</a> will be in <a routerLink="../../locationcontent/{{oneEvent.venue.metroArea.id}}">{{oneEvent.location.city}}</a>,  
+      <a routerLink="../../venuescontent/{{ oneEvent.venue.id }}"> 
+        {{oneEvent.venue.displayName}}
       </a>
-      , the {{index.start.date}} at {{index.start.time}}
-      <a class="btn btn-info btn-outline-info btnmarker" role="button" href="{{ index.uri }}">
+      , the {{oneEvent.start.date}} at {{oneEvent.start.time}}
+      <a class="btn btn-info btn-outline-info btnmarker" role="button" href="{{ oneEvent.uri }}">
         <small>Buy tickets</small>
       </a>
     </div>
