@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, DoCheck } from '@angular/core';
+import { FindIndexService } from '../services/find-index.service';
 
 @Component({
   selector: 'app-cartemapvenue',
@@ -7,6 +8,7 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
 })
 export class CartemapvenueComponent implements OnInit {
 
+
   @Input() objetVenue;
 
   //donner des positions; les variables sont à lire dans "[longitude]" et "[latitude]"
@@ -14,8 +16,7 @@ export class CartemapvenueComponent implements OnInit {
 	lat: number = 55;
 	lng: number = 12;
 
-
-  
+  constructor(private findindexservice : FindIndexService) {}
 
 
   ngOnInit(){
@@ -23,6 +24,18 @@ export class CartemapvenueComponent implements OnInit {
   ngOnChanges(){
       this.lng = this.objetVenue.resultsPage.results.venue.lng;
       this.lat = this.objetVenue.resultsPage.results.venue.lat;
+  }
+
+  scrollTo() {
+      let element = document.getElementById("carte");
+      element.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+  }
+
+  ngDoCheck(){
+    if (this.findindexservice.scrollBoolean){
+      this.scrollTo();
+      this.findindexservice.scrollBoolean = false;
+    }
   }
 
 }

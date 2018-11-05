@@ -1,8 +1,18 @@
 <div class="content">
   <app-artistpage [affichage]="affichage" [artistName]="artistName"></app-artistpage>
   <br>
-  <p *ngIf="affichage==false" class="text-center">This artist isn't on tour. We don't find any events.</p>
-  <app-cartemap *ngIf="affichage==true" [objetTest]="objetTest"></app-cartemap>
+  <p *ngIf="affichage==false" class="text-center">No concert was found.</p>
+  <app-cartemap *ngIf="affichage==true" [objetTest]="objetTest" [affichageTitrePourLocation]="affichageTitrePourLocation"></app-cartemap>
   <br>
+  <div class=" box container-4">
+      <select>
+      	<option (click)="search('anytime')" class="option" value="anytime" id="anytime" >Anytime</option>
+        <option (click)="search('today')" class="option" value="today" id="today" >Today</option>
+        <option (click)="search('tomorrow')" class="option" id="tomorrow">Tomorrow</option>
+        <option (click)="search('thisWeek')" class="option" id="thisWeek">This week</option>
+        <option (click)="search('thisMonth')" class="option" id="thisMonth" >This Month</option>
+        <option (click)="search('next3Months')" class="option" id="next3Months" >Next 3 months</option>
+      </select>
+  </div>
   <app-eventlist *ngIf="affichage==true" [objetTest]="objetTest"></app-eventlist>
 </div>

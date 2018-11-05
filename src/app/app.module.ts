@@ -25,6 +25,7 @@ import { VenueResultComponent } from './venue-result/venue-result.component';
 import { ContentVenueComponent } from './content-venue/content-venue.component';
 import { VenuePageComponent } from './venue-page/venue-page.component';
 import { CartemapvenueComponent } from './cartemapvenue/cartemapvenue.component';
+import { FindIndexService } from './services/find-index.service';
 
 const appRoutes: Routes = [
 {path: 'artistcontent/:id', component: ContentComponent},
@@ -65,7 +66,7 @@ const appRoutes: Routes = [
     }),
     NgxPaginationModule
   ],
-  providers: [LastFMService, SongkickService, LocationService],
+  providers: [LastFMService, SongkickService, LocationService, FindIndexService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

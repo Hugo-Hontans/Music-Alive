@@ -28,7 +28,6 @@ export class AppComponent implements OnInit {
   }
 
   scrollToElement($element): void {
-    console.log($element);
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
