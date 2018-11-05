@@ -15,6 +15,7 @@ export class SongkickService {
   private apiUrlLocationSearch1 =
     'https://api.songkick.com/api/3.0/metro_areas/';
   private apiUrlLocationSearch2 = '/calendar.json?apikey=jGIjCGirpGWFCCqb';
+
   private apiUrlVenueDetails1 = 'https://api.songkick.com/api/3.0/venues/';
   private apiUrlVenueDetails2 = '.json?apikey=jGIjCGirpGWFCCqb';
 
@@ -22,13 +23,23 @@ export class SongkickService {
   private apiUrlEventsOfVenue1 = 'https://api.songkick.com/api/3.0/venues/'; // + {venue_id}
   private apiUrlEventsOfVenue2 = '/calendar.json?apikey=jGIjCGirpGWFCCqb';
 
+  private apiUrlMinDate="&min_date=";
+  private apiUrlMaxDate="&max_date=";
+
   constructor(private http: HttpClient) {}
 
-  apiCall(artist) {
+  apiCall(artist, minDate?, maxDate?) {
+    if (minDate && maxDate){
+      return this.http.get(this.apiUrl + artist + this.apiUrlMinDate + minDate + this.apiUrlMaxDate + maxDate)
+    }
     return this.http.get(this.apiUrl + artist);
+    
   }
 
-  apiCallLocationSearch(id) {
+  apiCallLocationSearch(id, minDate?, maxDate?) {
+    if (minDate && maxDate){
+      return this.http.get(this.apiUrlLocationSearch1 + id + this.apiUrlLocationSearch2 + this.apiUrlMinDate + minDate + this.apiUrlMaxDate + maxDate);
+    }
     return this.http.get(
       this.apiUrlLocationSearch1 + id + this.apiUrlLocationSearch2
     );
@@ -47,7 +58,10 @@ export class SongkickService {
     );
   }
 
-  searchEventsOfVenue(venueId) {
+  searchEventsOfVenue(venueId, minDate?, maxDate?) {
+    if (minDate && maxDate){
+      return this.http.get(this.apiUrlEventsOfVenue1 + venueId + this.apiUrlEventsOfVenue2 + this.apiUrlMinDate + minDate + this.apiUrlMaxDate + maxDate);
+    }
     return this.http.get(
       this.apiUrlEventsOfVenue1 + venueId + this.apiUrlEventsOfVenue2
     );

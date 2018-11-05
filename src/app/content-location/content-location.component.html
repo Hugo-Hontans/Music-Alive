@@ -1,7 +1,17 @@
 <div class="content">
   <app-cartemap *ngIf="affichage==true" [objetTest]="objetTest" [affichageTitrePourLocation]="affichageTitrePourLocation"></app-cartemap>
   <br>
+  <div class=" box container-4">
+      <select>
+      	<option (click)="search('anytime')" class="option" value="anytime" id="anytime" >Anytime</option>
+        <option (click)="search('today')" class="option" value="today" id="today" >Today</option>
+        <option (click)="search('tomorrow')" class="option" id="tomorrow">Tomorrow</option>
+        <option (click)="search('thisWeek')" class="option" id="thisWeek">This week</option>
+        <option (click)="search('thisMonth')" class="option" id="thisMonth" >This Month</option>
+        <option (click)="search('next3Months')" class="option" id="next3Months" >Next 3 months</option>
+      </select>
+  </div>
   <app-eventlist *ngIf="affichage==true" [objetTest]="objetTest"></app-eventlist>
-  <p *ngIf="affichage==false" class="text-center">We don't find any events in this city.</p>
+  <p *ngIf="affichage==false" class="text-center">We didn't find any event in this city.</p>
 </div>
 

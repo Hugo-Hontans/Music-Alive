@@ -24,7 +24,7 @@ export class ArtistpageComponent implements OnInit {
   searchMusic() {
     this.lastFmService.searchMusic(this.artistName).subscribe((res: any) => {
       if (res.error === 6) {
-        this.errorMessage = this.artistName + ' was not found. Please retry another request.' ;
+        this.errorMessage = this.artistName + ' was not found. Please try another request.' ;
       }
       else {
         this.errorMessage = null;
@@ -33,7 +33,7 @@ export class ArtistpageComponent implements OnInit {
         this.summary = res.artist.bio.summary;
         this.similarArtist = res.artist.similar.artist;
         if (this.affichage === false) {
-          this.affichageOnTour = 'Not on tour';
+          this.affichageOnTour = 'No concert found';
         }
         else {
           this.affichageOnTour = 'On tour';
