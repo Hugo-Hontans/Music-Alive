@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class FindIndexService {
 
+	scrollBoolean = false;
 	index;
 	doCheckCarteMap = false;
 

@@ -19,6 +19,7 @@ export class EventItemComponent implements OnInit {
   indexOfEvents(){
     this.findindexservice.index = this.index;
     this.findindexservice.doCheckCarteMap = true;
+    this.findindexservice.scrollBoolean = true;
   }
 
   ngOnInit() {

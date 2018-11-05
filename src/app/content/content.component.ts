@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, DoCheck } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { SongkickService } from '../services/songkick.service';
 
@@ -16,7 +16,7 @@ export class ContentComponent implements OnInit {
   // boolean pour eviter les erreurs de la console lors du chargement du component
   affichage = false;
   affichageTitrePourLocation=false;
-
+  
   constructor(private route: ActivatedRoute, private service: SongkickService) { }
 
     search() {
@@ -37,5 +37,6 @@ export class ContentComponent implements OnInit {
       this.search();
     })
   }
+
 
 }

@@ -21,6 +21,11 @@ export class CartemapComponent implements OnInit {
 
   constructor(private findindexservice : FindIndexService) {}
 
+  scrollTo() {
+      let element = document.getElementById("carte");
+      element.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+    }
+
 
   ngOnInit(){
   }
@@ -34,6 +39,10 @@ export class CartemapComponent implements OnInit {
       this.lng = this.objetTest.resultsPage.results.event[this.index].venue.lng;
       this.lat = this.objetTest.resultsPage.results.event[this.index].venue.lat;
       this.findindexservice.doCheckCarteMap = false;
+    }
+    if (this.findindexservice.scrollBoolean){
+      this.scrollTo();
+      this.findindexservice.scrollBoolean = false;
     }
   }
 
