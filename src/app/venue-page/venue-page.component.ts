@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-venue-page',
@@ -11,4 +11,6 @@ export class VenuePageComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+  ngOnChanges(){
+  }
 }

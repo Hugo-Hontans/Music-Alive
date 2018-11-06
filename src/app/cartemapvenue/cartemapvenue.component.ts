@@ -18,6 +18,10 @@ export class CartemapvenueComponent implements OnInit {
 
   constructor(private findindexservice : FindIndexService) {}
 
+    scrollTo() {
+      let element = document.getElementById("carte");
+      element.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+    }
 
   ngOnInit(){
   }
@@ -26,10 +30,7 @@ export class CartemapvenueComponent implements OnInit {
       this.lat = this.objetVenue.resultsPage.results.venue.lat;
   }
 
-  scrollTo() {
-      let element = document.getElementById("carte");
-      element.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
-  }
+
 
   ngDoCheck(){
     if (this.findindexservice.scrollBoolean){
