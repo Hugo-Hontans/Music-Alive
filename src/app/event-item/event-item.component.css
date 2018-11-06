@@ -10,3 +10,18 @@
   height: 100%;
 }
 
+.markerbtnleftside {
+  float:left;
+  margin-bottom:10px;
+}
+
+.btnrightside{
+  float:right;
+  margin-top:14px;
+}
+
+.tailleimg{
+  width:64px;
+  height:64px;
+  border-radius: 30px;
+}

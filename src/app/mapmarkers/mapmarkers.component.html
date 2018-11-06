@@ -1,14 +1,12 @@
 <agm-marker [longitude]="oneEvent.venue.lng" [latitude]="oneEvent.venue.lat">
   <agm-info-window [isOpen]="isOpenBoolean">
-    <div class="window"><a routerLink="../../artistcontent/{{oneEvent.performance[0].artist.displayName}}">{{oneEvent.performance[0].displayName}}</a> will be in <a routerLink="../../locationcontent/{{oneEvent.venue.metroArea.id}}">{{oneEvent.location.city}}</a>,  
-      <a routerLink="../../venuescontent/{{ oneEvent.venue.id }}"> 
-        {{oneEvent.venue.displayName}}
-      </a>
-      , the {{oneEvent.start.date}} at {{oneEvent.start.time}}
-      <a class="btn btn-info btn-outline-info btnmarker" role="button" href="{{ oneEvent.uri }}">
-        <small>Buy tickets</small>
-      </a>
-      <button (click)="scrollToEvent()">Show event</button>
+    <div class="window"><a routerLink="../../artistcontent/{{oneEvent.performance[0].artist.displayName}}">{{oneEvent.performance[0].displayName}}</a>
+      will be in <a routerLink="../../locationcontent/{{oneEvent.venue.metroArea.id}}">{{oneEvent.location.city}}</a>,
+      <br><a routerLink="../../venuescontent/{{ oneEvent.venue.id }}">
+        {{oneEvent.venue.displayName}}</a>
+      <span *ngIf="oneEvent.start.date">,<br>the {{oneEvent.start.date}}</span>
+      <span *ngIf="oneEvent.start.time"> at {{oneEvent.start.time}}</span>
+      <button class="btn btn-info btn-outline-info btnmarker" (click)="scrollToEvent()"><small>Show event</small></button>
     </div>
   </agm-info-window>
 </agm-marker>
