@@ -8,6 +8,11 @@ export class FindIndexService {
 	scrollBoolean = false;
 	index;
 	doCheckCarteMap = false;
+	serviceIndex;
+	scrollElementBoolean=false;
+	memorizeIndex(memo){
+		this.serviceIndex=memo;
+	}
 
   constructor() { }
 

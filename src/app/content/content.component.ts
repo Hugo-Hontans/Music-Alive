@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, OnChanges, DoCheck } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { SongkickService } from '../services/songkick.service';
+import { NgForm } from '@angular/forms';
 
 
 @Component({
@@ -21,10 +22,13 @@ export class ContentComponent implements OnInit {
   dd=this.today.getDate();
   mm=this.today.getMonth()+1;
   yyyy=this.today.getFullYear();
+  event;
 
 
 
-  constructor(private route: ActivatedRoute, private service: SongkickService) { }
+  constructor(private route: ActivatedRoute, private service: SongkickService) {
+    this.event = "anytime";
+   }
 
     search(variable) {
       switch (variable) {

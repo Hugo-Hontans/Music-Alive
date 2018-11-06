@@ -13,6 +13,11 @@ export class MapmarkersComponent implements OnInit {
 
   constructor(private findindexservice : FindIndexService) { }
 
+  scrollToEvent(){
+    this.findindexservice.memorizeIndex(this.index);
+    this.findindexservice.scrollElementBoolean=true;
+  }
+
   ngOnInit() {
   }
   ngDoCheck(){

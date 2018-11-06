@@ -19,10 +19,13 @@ export class ContentLocationComponent implements OnInit {
     dd=this.today.getDate();
     mm=this.today.getMonth()+1;
     yyyy=this.today.getFullYear();
+    event;
 
 
 
-  constructor(private route: ActivatedRoute, private service: SongkickService) { }
+  constructor(private route: ActivatedRoute, private service: SongkickService) {
+      this.event = "anytime";
+   }
 
       search(variable) {
       switch (variable) {

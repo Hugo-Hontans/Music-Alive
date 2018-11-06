@@ -13,16 +13,20 @@ export class ContentVenueComponent implements OnInit {
   objetEventsOfVenue;
   affichage = false;
   affichage2 = false;
+  event;
 
   today=new Date();
   dd=this.today.getDate();
   mm=this.today.getMonth()+1;
   yyyy=this.today.getFullYear();
 
+
   constructor(
     private songkickservice: SongkickService,
     private route: ActivatedRoute
-  ) {}
+  ) {
+    this.event="anytime";
+  }
 
   searchVenueDetails() {
     this.songkickservice
