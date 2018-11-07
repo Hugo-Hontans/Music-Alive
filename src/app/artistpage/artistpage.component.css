@@ -23,14 +23,18 @@ li{
 .similarLi {
   margin-right: 10px;
 }
-
+a{
+  color :#ff471a;
+}
 
 
 .btn-danger {
-  opacity: 0.9;
-  background-color: red;
+  opacity: 1;
+  background-color: #cc0505;
+  margin-bottom: 8px;
 }
 .btn-success {
   opacity: 0.9;
+  margin-bottom: 8px;
 }
 
