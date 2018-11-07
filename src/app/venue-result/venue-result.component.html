@@ -3,7 +3,7 @@
     <div *ngFor="let l of objetVenue.resultsPage.results.venue" class="card mb6 col-lg-3 col-sm-6 col-6"
       style="max-width: 18rem;">
       <div class="card-body text-info">
-        <a routerLink="../../venuescontent/{{l.id}}"><h5 class="card-title">{{l.displayName}},</h5></a>
+        <h5 class="card-title"><a routerLink="../../venuescontent/{{l.id}}">{{l.displayName}}</a>,</h5>
         <h6> {{l.city.displayName}}, {{l.city.country.displayName}}</h6>
       </div>
     </div>
