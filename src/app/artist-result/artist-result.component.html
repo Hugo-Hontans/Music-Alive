@@ -5,7 +5,7 @@
       class="
       col-lg-3 col-6 no-gutters">
       <a routerLink="../../artistcontent/{{ a.name }}">
-        <img class="figure-img img-fluid rounded" src="{{ a.image[2]['#text'] }}" onerror="this.src='../../assets/img/etoile.png'">
+        <img class="figure-img img-fluid rounded" src="{{ a.image[2]['#text'] }}" onerror="this.src='../../assets/img/fallbackImage.png'">
       </a>
       <figcaption>
         <a routerLink="../../artistcontent/{{ a.name }}">
