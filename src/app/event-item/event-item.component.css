@@ -10,18 +10,25 @@
   height: 100%;
 }
 
-.markerbtnleftside {
-  float:left;
-  margin-bottom:10px;
+.markerbtn{
+  float:right;
 }
 
-.btnrightside{
-  float:right;
-  margin-top:14px;
+.btn-orange {
+  border: 1px solid #ff571a;
+}
+
+.btn-orange:hover {
+  background-color: #ff571a;
+  color:white;
 }
 
 .tailleimg{
   width:64px;
   height:64px;
   border-radius: 30px;
+}
+
+a {
+  color:#ff571a;
 }
