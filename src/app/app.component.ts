@@ -22,28 +22,45 @@ export class AppComponent implements OnInit {
   locationGeo;
   objetLoc;
   show=false;
+  affichageIcones = true;
+  elem="$element"
 
   constructor(private service: SongkickService, private router: Router, private locService:LocationService) {
     this.type = 'artist';
   }
 
-  scrollToElement($element): void {
-    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  booleanMenu(){
+    this.affichageIcones = true;
+  }
+
+  scrollToElement(elem): void {
+    elem.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+  scrollToContent(elem): void {
+    let mediaWidth=window.matchMedia("(min-width: 769px)");
+    if (mediaWidth.matches){
+      setTimeout(() => window.scrollTo({top:275, behavior : 'smooth'}), 500);
+    }
+    else {setTimeout(() => window.scrollTo({top:20, behavior : 'smooth'}), 500);}
   }
 
   search(form: NgForm) {
+    this.affichageIcones = false;
     switch (form.value['type']) {
       case 'artist':
+        this.scrollToContent(this.elem);
         let artist: string = form.value['searchValue'];
         this.router.navigate(['artists/' + artist]);
         break;
 
       case 'venue':
+        this.scrollToContent(this.elem);
         let venue: string = form.value['searchValue'];
         this.router.navigate(['venues/' + venue]);
         break;
 
       case 'location':
+        this.scrollToContent(this.elem);
         let location: string = form.value['searchValue'];
         this.router.navigate(['locations/' + location]);
         break;

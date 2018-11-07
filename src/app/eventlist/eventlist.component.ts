@@ -24,6 +24,14 @@ export class EventlistComponent implements OnInit {
   ngOnInit() {
   }
 
+  ngOnChanges() {
+    let mediaWidth=window.matchMedia("(min-width: 769px)");
+    if (mediaWidth.matches){
+      setTimeout(() => window.scrollTo({top:300, behavior : 'smooth'}), 300);
+    }
+    else {setTimeout(() => window.scrollTo({top:60, behavior : 'smooth'}), 500);}
+  }
+
   ngDoCheck(){
     if (this.findindexservice.scrollElementBoolean==true) {
     this.scrollToElement();
