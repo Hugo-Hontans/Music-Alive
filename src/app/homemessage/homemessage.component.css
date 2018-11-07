@@ -1,9 +1,9 @@
 
   .homemessage {
     margin-top: 4%;
-    color: blue;
+    color: #FF471A;
     font-family: 'Disco';
-    text-shadow: 1px 1px 5px rgb(0, 110, 255)
+    text-shadow: 1px 1px 5px rgb(255, 151, 16);
   }
   
   .letters {

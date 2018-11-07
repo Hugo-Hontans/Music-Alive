@@ -1,13 +1,20 @@
-
+/* en petit */
+@media screen and (max-width: 910px) {
+  agm-map {
+    width: 100vw;
+    height: 48vh;
+  }
+}
 /*en grand*/
 
+@media screen and (min-width: 911px) {
 agm-map {
   height: 48vh;
-  width:100%;
+  width: 80vh;
+}
 }
 
 .carte {
   padding: none;
   background-color: red;
-  margin-bottom: 4vh
 }

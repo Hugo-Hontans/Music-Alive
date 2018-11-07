@@ -1,15 +1,7 @@
 .container{
-	background-color: white;
-  -moz-box-shadow: 1px 1px 5px 0px #656565;
-  -webkit-box-shadow: 1px 1px 5px 0px #656565;
-  -o-box-shadow: 1px 1px 5px 0px #656565;
-  box-shadow: 1px 1px 5px 0px #656565;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  padding-left: 0px !important;
+	
   height: 48vh;
+  margin-bottom: 4vh
 }
 
 li{
@@ -18,16 +10,11 @@ li{
 #errorMessage{
 	margin-top: 30px;
 }
-.img {
-}
 .similarLi {
   margin-right: 10px;
 }
-
-
-
 .btn-danger {
-  opacity: 0.9;
+  opacity: 1;
   background-color: red;
 }
 .btn-success {

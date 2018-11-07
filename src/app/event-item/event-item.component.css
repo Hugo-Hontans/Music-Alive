@@ -8,5 +8,13 @@
 .bord {
   border: none;
   height: 100%;
+  width: 70vw;
 }
 
+.card-header {
+  background-color: grey;
+}
+
+.card {
+  margin: -10px;
+}

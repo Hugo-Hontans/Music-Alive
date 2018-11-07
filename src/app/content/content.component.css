@@ -1,32 +1,13 @@
 
-@media screen and (max-width: 910px) {
-  .content {
-  margin-right: 2%;
-  margin-left: 2%;
-  width: 96%;
-  }
-}
-
-
 .content {
   background-color: #fcfcfc;
-  width: 100%;
-  max-width: 900px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 10px;
-
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-
 }
 
-.desc {
-float:left;
+.datesort {
+  margin-left: 70%;
 }
-
 .event {
   max-height: 100vh;
   overflow: scroll;
+  overflow-x: hidden;
 }

@@ -3,7 +3,8 @@
 }
 
 img {
-    width: 175px;
+    width: 65px;
+    margin-bottom: 10px;
 }
 
 .pink {
@@ -13,10 +14,10 @@ img {
 .desccard {
     text-align: center;
 
-    background-color: #fffdfb33;
+    background-color: rgba(255, 255, 255, 0.705);
     padding: 15px;
     border-radius: 15px;
-    box-shadow: 1px 1px 2px #656565;
+    box-shadow: 1px 1px 2px #fff;
     
     margin: 15px;
 }

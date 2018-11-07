@@ -1,10 +1,14 @@
 <li class="list-group-item list-group-item-action flex-column textsize bord">
 
-  <div class="d-flex w-100 justify-content-between">
+  <div class="card">
+  <div class="card-header d-flex w-100 justify-content-between">
 
-    <h2><a routerLink="../../artistcontent/{{oneEvent.performance[0].artist.displayName}}">{{ oneEvent.performance[0].artist.displayName }}</a></h2>
-    <p>{{ oneEvent.type }}<span *ngIf="oneEvent.start.datetime != null"> at {{ oneEvent.start.datetime | date:'shortTime'}}</span></p>
+    <h2><a routerLink="../../artistcontent/{{oneEvent.performance[0].artist.displayName}}">{{
+        oneEvent.performance[0].artist.displayName }}</a></h2>
+    <p>{{ oneEvent.type }}<span *ngIf="oneEvent.start.datetime != null"> at {{ oneEvent.start.datetime |
+        date:'shortTime'}}</span></p>
   </div>
+
   <p> {{ oneEvent.start.datetime | date:'fullDate' }} {{ oneEvent.start.date }}</p>
   <!-- pour un beau calendrier...<p> {{ oneEvent.start.date }}</p> -->
   <h5 class="mb-1">{{ oneEvent.displayName }}</h5>
@@ -22,4 +26,5 @@
     <a class="btn btn-outline-info" role="button" id="moredetails" target="_blank" href="{{ oneEvent.uri }}"><small>Buy
         tickets</small></a>
   </div>
+</div>
 </li>
