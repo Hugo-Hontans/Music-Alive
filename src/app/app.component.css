@@ -25,7 +25,7 @@
 }
 
 .select {
-  border: 1px solid lightgrey;
+  border: 2px solid #FF471A;
   height: 60px;
   width: 20%;
   -webkit-border-top-left-radius: 6px;
@@ -75,7 +75,7 @@
     height: 60px;
     background: #fff;
     color: #6b6b6b;
-    border: 1px solid lightgrey;
+    border: 2px solid #FF471A;
     font-size: 15pt;
     text-align: center;
     padding-left: 15px;
