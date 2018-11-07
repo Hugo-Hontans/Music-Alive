@@ -1,23 +1,16 @@
-<a *ngIf="show==true" routerLink="locationcontent/{{objetLoc}}"><img class="logo" src="../../assets/img/logo.png"></a>
-<a *ngIf="show==false" routerLink=""><img class="logo" src="../../assets/img/logo.png"></a>
+<a *ngIf="show==true" routerLink="locationcontent/{{objetLoc}}"><img class="logo" src="../../assets/img/home-button.png"></a>
+<a *ngIf="show==false" routerLink=""><img class="logo" src="../../assets/img/home-button.png"></a>
 <img (click)="scrollToElement(target)" class="imghaut d-none d-md-block" src="../assets/img/arrow.png" alt="arrow image">
 
 
-<div class="container homemessage">
-  <div class="text-wrapper">
-    <div class="first-word row justify-content-start">Find your Best</div>
-    <div class="animated-words row justify-content-center">
-        <span class="animated-word row justify-content-center">Concert</span>
-        <span class="animated-word row justify-content-center">Artist</span>
-        <span class="animated-word row justify-content-center">Place</span>
-        <span class="animated-word row justify-content-center">Festival</span>
-    </div>
-     <div class="last-word row justify-content-end">Around the world</div>
-  </div>
+<div #target>
+  <!-- div vide pour la remontée de la flèche -->
 </div>
 
-<div class=" box container-4">
-    <form (ngSubmit)="search(f)" #f="ngForm">
+<app-homemessage></app-homemessage>
+
+<div class=" box container-4 d-flex justify-content-center align-items-center">
+    <form class="searchbar" (ngSubmit)="search(f)" #f="ngForm">
       <select class="select" name="type" [(ngModel)]="type">
         <option class="option" value="artist" >artist</option>
         <option class="option" value="venue">venue</option>
@@ -28,14 +21,13 @@
   </form>
 </div>
 
-<div #target>
-  <!-- div vide pour la remontée de la flèche -->
-</div>
+<app-desc-icon></app-desc-icon>
 <div class='content'>
   <router-outlet></router-outlet>
 
-  <app-footer></app-footer>
+  
 </div>
+<app-footer></app-footer>
 
 
 

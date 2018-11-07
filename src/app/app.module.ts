@@ -26,6 +26,8 @@ import { ContentVenueComponent } from './content-venue/content-venue.component';
 import { VenuePageComponent } from './venue-page/venue-page.component';
 import { CartemapvenueComponent } from './cartemapvenue/cartemapvenue.component';
 import { FindIndexService } from './services/find-index.service';
+import { DescIconComponent } from './desc-icon/desc-icon.component';
+import { HomemessageComponent } from './homemessage/homemessage.component';
 
 const appRoutes: Routes = [
 {path: 'artistcontent/:id', component: ContentComponent},
@@ -52,7 +54,9 @@ const appRoutes: Routes = [
     VenueResultComponent,
     ContentVenueComponent,
     VenuePageComponent,
-    CartemapvenueComponent
+    CartemapvenueComponent,
+    DescIconComponent,
+    HomemessageComponent
 
   ],
   imports: [

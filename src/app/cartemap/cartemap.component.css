@@ -1,15 +1,13 @@
 
 /*en grand*/
-agm-map {
-  height: 300px;
-  width: 100%;
-  z-index: 0;
 
+agm-map {
+  height: 48vh;
+  width:100%;
 }
 
 .carte {
   padding: none;
   background-color: red;
-  
+  margin-bottom: 4vh
 }
-

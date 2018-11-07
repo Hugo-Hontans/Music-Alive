@@ -15,7 +15,6 @@
   margin-right: auto;
   margin-left: auto;
   padding: 10px;
-  margin-top:20%;
 
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -23,3 +22,11 @@
 
 }
 
+.desc {
+float:left;
+}
+
+.event {
+  max-height: 100vh;
+  overflow: scroll;
+}
