@@ -9,12 +9,12 @@
   </div>
 
 
-  <span class="d-none d-md-block">
-    <p> {{ oneEvent.start.datetime | date:'fullDate' }} {{ oneEvent.start.date }}<a class="markerbtn" (click)="indexOfEvents()"><img class="tailleimg" src="data:image/svg+xml;base64,
+  
+    <p><span class="d-none d-md-block"> {{ oneEvent.start.datetime | date:'fullDate' }} {{ oneEvent.start.date }}
+  </span>
+  <a class="markerbtn" (click)="indexOfEvents()"><img class="tailleimg" src="data:image/svg+xml;base64,
       PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTMgNTMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUzIDUzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIGNsYXNzPSIiPjxnPjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6I0VBNDMzNSIgZD0iTTM3LjUzLDUuMzI0TDM3LjUzLDUuMzI0Yy03LjA5OC03LjA5OC0xOC42MDctNy4wOTgtMjUuNzA2LDBoMEM1LjQyOCwxMS43Miw0LjcwOCwyMy43NjMsMTAuMTM2LDMxICAgbDE0LjU0MSwyMWwxNC41NDEtMjFDNDQuNjQ2LDIzLjc2Myw0My45MjYsMTEuNzIsMzcuNTMsNS4zMjR6IE0yNC44NTQsMjRjLTMuMzE0LDAtNi0yLjY4Ni02LTZzMi42ODYtNiw2LTZzNiwyLjY4Niw2LDYgICBTMjguMTY3LDI0LDI0Ljg1NCwyNHoiIGRhdGEtb3JpZ2luYWw9IiMwMDk2RTYiIGNsYXNzPSIiIGRhdGEtb2xkX2NvbG9yPSIjRUE0MzkwIj48L3BhdGg+Cgk8Zz4KCQk8cmVjdCB4PSIyNC41IiB5PSIzMSIgc3R5bGU9ImZpbGw6I0ZGRkZGRiIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIyIiBkYXRhLW9yaWdpbmFsPSIjNTU2MDgwIiBjbGFzcz0iIiBkYXRhLW9sZF9jb2xvcj0iIzU1NjA4MCI+PC9yZWN0PgoJCTxyZWN0IHg9IjM0LjUiIHk9IjM3IiBzdHlsZT0iZmlsbDojNTE1MTUxIiB3aWR0aD0iMiIgaGVpZ2h0PSIxNiIgZGF0YS1vcmlnaW5hbD0iI0ZGRkZGRiIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iI0ZGRkZGRiI+PC9yZWN0PgoJCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiM1MTUxNTEiIHBvaW50cz0iNDAuNzkzLDQzLjcwNyAzNS41LDM4LjQxNCAzMC4yMDcsNDMuNzA3IDI4Ljc5Myw0Mi4yOTMgMzUuNSwzNS41ODYgNDIuMjA3LDQyLjI5MyAgICIgZGF0YS1vcmlnaW5hbD0iI0ZGRkZGRiIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iI0ZGRkZGRiI+PC9wb2x5Z29uPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4"></a>
   </p>
-    
-  </span>
 
 
   <h5 class="mb-1">{{ oneEvent.displayName }}</h5>
@@ -32,11 +32,11 @@
         oneEvent.venue.metroArea.displayName }}</a>
     </span>
 
-    
+
 
   </p>
 
-  
+
   <span class="d-flex justify-content-end">
     <a class="btn btn-orange" role="button" id="moredetails" target="_blank" href="{{ oneEvent.uri }}"><small>Buy
         tickets</small></a>

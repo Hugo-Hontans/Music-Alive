@@ -12,6 +12,14 @@
 
 .markerbtn{
   float:right;
+  margin-top: 2px;
+}
+
+@media screen and (max-width: 768px){
+  .markerbtn {
+    float:right;
+    margin-top:40px;
+  }
 }
 
 .btn-orange {
@@ -24,8 +32,8 @@
 }
 
 .tailleimg{
-  width:64px;
-  height:64px;
+  width:45px;
+  height:45px;
   border-radius: 30px;
 }
 
