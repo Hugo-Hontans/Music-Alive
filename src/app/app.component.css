@@ -3,7 +3,7 @@
     display: none;
   }
   .box{
-    top: 1%;
+    margin-top: 7px ;
     margin-left: auto;
     margin-right: auto;
     width: 94%;
@@ -11,10 +11,11 @@
   .container-4 {
     width: 94%;
   }
+
 }
 @media screen and (min-width: 769px) {
   .box {
-    margin: 25px auto;
+    margin: 7px auto;
     width: 80%;
     max-width: 800px;
   }
@@ -49,14 +50,13 @@
     z-index: 3;
     position: sticky;
     position: -webkit-sticky;
-    top: 3%;
+    top: 7px;
     margin-left: 2%;
     margin-right: 2%;
     width: 60px;
     position: top-left;
 }
 .toc{
-  background-color: none;
   z-index: 2;
   position: -webkit-sticky;
   position: sticky;

@@ -15,7 +15,7 @@
      <div class="last-word row justify-content-end">Around the world</div>
   </div>
 </div>
-<div class="toc" >
+<div [@scrolledNotScrolled]=" isScrolled ? 'scrolled' : 'notscrolled'" class="toc" >
 <div class=" box container-4">
     <form class="form" (ngSubmit)="search(f)" #f="ngForm">
       <select class="select" name="type" [(ngModel)]="type">

@@ -1,17 +1,37 @@
-import { HostListener, Inject, Component, Injectable, OnInit} from '@angular/core';
+import { HostListener, Inject, Component, Injectable, OnInit, HostBinding} from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { SongkickService } from './services/songkick.service';
 import { Router } from '@angular/router';
 import { DOCUMENT } from '@angular/platform-browser';
 import { LocationService } from './services/location.service';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  animations: [
+    trigger('scrolledNotScrolled', [
+      state('scrolled', style({
+        backgroundColor: 'grey',
+        boxShadow: '0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)'
+      })),
+      state('notscrolled', style({
+        backgroundColor: 'transparent',
+        boxShadow: 'none'
+      })),
+      transition('notscrolled => scrolled', [
+        animate('0.20s')
+      ]),
+      transition('scrolled => notscrolled', [
+        animate('0.05s')
+      ]),
+    ])
+  ]
 })
 @Injectable()
 export class AppComponent implements OnInit {
-
+  screenSize: number ;
+  isScrolled = false;
   artistName;
   performed = false;
   title = 'easy-musique';
@@ -59,10 +79,10 @@ export class AppComponent implements OnInit {
    @HostListener('window:scroll', [])
    onWindowScroll() {
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (number > 255) {
-      (document.querySelector('.toc') as HTMLElement).style.backgroundColor = 'grey';
+    if (number > 255 && this.screenSize > 768 ) {
+      this.isScrolled = true;
     } else if (number < 255) {
-      (document.querySelector('.toc') as HTMLElement).style.backgroundColor = 'transparent';
+      this.isScrolled = false;
     }
   }
 
@@ -89,6 +109,7 @@ export class AppComponent implements OnInit {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(this.displayLocationInfo);
     }
+    this.screenSize = window.innerWidth ;
   }
   ngDoCheck() {
     if (this.geoLoc === true) {
