@@ -15,9 +15,9 @@
      <div class="last-word row justify-content-end">Around the world</div>
   </div>
 </div>
-
+<div class="toc" >
 <div class=" box container-4">
-    <form (ngSubmit)="search(f)" #f="ngForm">
+    <form class="form" (ngSubmit)="search(f)" #f="ngForm">
       <select class="select" name="type" [(ngModel)]="type">
         <option class="option" value="artist" >artist</option>
         <option class="option" value="venue">venue</option>
@@ -27,7 +27,7 @@
     <button type="submit" [disabled]="f.invalid" (click)="searchValue.value=''" class="icon"><i class="fa fa-search"></i></button>
   </form>
 </div>
-
+</div>
 <div #target>
   <!-- div vide pour la remontée de la flèche -->
 </div>

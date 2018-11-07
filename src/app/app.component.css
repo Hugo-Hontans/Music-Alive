@@ -14,7 +14,7 @@
 }
 @media screen and (min-width: 769px) {
   .box {
-    margin: 100px auto;
+    margin: 25px auto;
     width: 80%;
     max-width: 800px;
   }
@@ -43,27 +43,34 @@
 .option {
   text-align-last: center;
 }
+
+
 .logo{
     z-index: 3;
-    position: -webkit-sticky;
     position: sticky;
+    position: -webkit-sticky;
     top: 3%;
     margin-left: 2%;
     margin-right: 2%;
     width: 60px;
     position: top-left;
 }
+.toc{
+  background-color: none;
+  z-index: 2;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  padding: 1px;
+}
 .content {
   z-index: 1;
 }
 .box{
-    z-index: 3;
+
     height: 60px;
   }
   .container-4{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 3%;
     overflow: hidden;
     vertical-align: middle;
     white-space: nowrap;
@@ -167,19 +174,19 @@
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
-.animated-words span:nth-child(2) { 
-  -webkit-animation-delay: 3s; 
-  -ms-animation-delay: 3s; 
+.animated-words span:nth-child(2) {
+  -webkit-animation-delay: 3s;
+  -ms-animation-delay: 3s;
   animation-delay: 3s;
 }
-.animated-words span:nth-child(3) { 
-  -webkit-animation-delay: 6s; 
-  -ms-animation-delay: 6s; 
+.animated-words span:nth-child(3) {
+  -webkit-animation-delay: 6s;
+  -ms-animation-delay: 6s;
   animation-delay: 6s;
 }
-.animated-words span:nth-child(4) { 
-  -webkit-animation-delay: 9s; 
-  -ms-animation-delay: 9s; 
+.animated-words span:nth-child(4) {
+  -webkit-animation-delay: 9s;
+  -ms-animation-delay: 9s;
   animation-delay: 9s;
 }
 @-webkit-keyframes animateWord {
