@@ -5,12 +5,11 @@
   <h1 class="text-center">All the concerts in {{ objetTest.resultsPage.results.event[0].location.city }}</h1>
   <app-cartemap class="map" *ngIf="affichage==true" [objetTest]="objetTest" [affichageTitrePourLocation]="affichageTitrePourLocation"></app-cartemap>
   <br>
-</div>  
+</div>
 
 <div class="row col-md-6 col-12 event d-flex justify-content-center">
 
   <div class=" box container-4">
-      <img src="../../assets/img/calendar.png" alt="logo calendar">
       <select class="buttonOption btn dropdown-toggle" ngModel [(ngModel)]="event" (ngModelChange)="search($event)">
           <option class="option" value="anytime"><button></button>Anytime</option>
           <option class="option" value="today">Today</option>

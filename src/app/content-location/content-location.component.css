@@ -1,4 +1,6 @@
-
+.content {
+  color:#fff;
+}
 @media screen and (max-width: 768px) {
   .dropdown-toggle {
     -webkit-appearance: none;
@@ -15,6 +17,8 @@
   color: #ff471a;
   width: 12vw;
   min-width: 180px;
+  border-radius: 50px;
+  margin-bottom: 20px;
 }
 
 .event {

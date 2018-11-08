@@ -6,24 +6,24 @@
   font-family: "Neonize";
   src: url(/assets/font/neonize.ttf);
  }
-  
+
 @font-face {
   font-family: "Disco";
   src: url(/assets/font/DiscoDiva.ttf);
 }
-  
+
 @font-face {
   font-family: "Club";
   src: url(/assets/font/club.otf);
 }
-  
+
 @font-face {
   font-family: "Club_bold";
   src: url(/assets/font/club_bold.otf);
 }
 
 body{
-  background-color: #f2f2f2;
+  background-color: #37474F;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
