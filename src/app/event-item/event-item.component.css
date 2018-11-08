@@ -10,18 +10,33 @@
   height: 100%;
 }
 
-.markerbtnleftside {
-  float:left;
-  margin-bottom:10px;
+.markerbtn{
+  float:right;
+  margin-top: 2px;
 }
 
-.btnrightside{
-  float:right;
-  margin-top:14px;
+@media screen and (max-width: 768px){
+  .markerbtn {
+    float:right;
+    margin-top:40px;
+  }
+}
+
+.btn-orange {
+  border: 1px solid #ff571a;
+}
+
+.btn-orange:hover {
+  background-color: #ff571a;
+  color:white;
 }
 
 .tailleimg{
-  width:64px;
-  height:64px;
+  width:45px;
+  height:45px;
   border-radius: 30px;
+}
+
+a {
+  color:#ff571a;
 }
