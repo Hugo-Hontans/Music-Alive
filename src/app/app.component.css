@@ -28,7 +28,7 @@
   .searchbar {
     max-width: 800px;
     width: 80%;
-    
+
   }
 }
 
@@ -95,13 +95,9 @@
     -webkit-border-top-right-radius: 6px;
     -moz-border-top-right-radius: 6px;
     border-top-right-radius: 6px;
-
+}
 .box {
-  margin-top: 6%;
   z-index: 3;
-  position: sticky;
-  
-
 }
 
 .searchbar {
