@@ -1,29 +1,15 @@
 
   .homemessage {
     margin-top: 4%;
+    color: #FF471A;
     font-family: 'Disco';
-    text-shadow: 1px 3px 5px lightskyblue
+    text-shadow: 1px 1px 5px rgb(255, 151, 16);
   }
   
   .letters {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   } 
 
   .monsterconcert {
     width: 70%;
     height: 40%;  }
-  /* .carousel-caption {
-    background-color: #979797;
-    color: black;
-    opacity: 0.7;
-    margin-left: 20%;
-    margin-right: 20%; 
-  }
-
-  .carousel {
-    top: 0;
-  }
-
-  .carousel-inner {
-
-  }  */

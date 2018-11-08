@@ -3,8 +3,9 @@
     color: white;
 }
 
-.footerimg {
-    width: 200px;
+.socialimg {
+    width: 35px;
+    margin: 0 4px 0 2px;
 }
 
 .footer-copyright {
@@ -16,5 +17,14 @@ a {
 }
 
 h4 {
-    color: #ff471a;
+    color: rgb(156, 156, 156)
+}
+
+.text-uppercase {
+    color: #FF471A;
+    text-align: start;
+}
+
+.list-unstyled {
+    text-align: start;
 }

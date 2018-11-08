@@ -83,14 +83,14 @@
     vertical-align: middle;
     white-space: nowrap;
   }
-  .container-4 input#search{
+  .searchbar input#search {
     width: 80%;
     height: 60px;
-    background: #2b303b;
-    border: none;
+    background: #fff;
+    color: #6b6b6b;
+    border: 2px solid #FF471A;
     font-size: 15pt;
-    text-align:center;
-    color: #fff;
+    text-align: center;
     padding-left: 15px;
     -webkit-border-top-right-radius: 6px;
     -moz-border-top-right-radius: 6px;

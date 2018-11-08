@@ -1,12 +1,4 @@
 
-@media screen and (max-width: 910px) {
-  .content {
-  margin-right: 2%;
-  margin-left: 2%;
-  width: 96%;
-  }
-}
-
 .buttonOption {
   background-color: rgb(39, 39, 39);
   color: #ff471a;
@@ -29,15 +21,13 @@ img {
 
 .content {
   background-color: #fcfcfc;
-  width: 100%;
-  max-width: 900px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 10px;
-  margin-top:2%;
+}
 
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-
+.datesort {
+  margin-left: 70%;
+}
+.event {
+  max-height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
 }
