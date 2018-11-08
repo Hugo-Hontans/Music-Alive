@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
   objetLoc;
   show=false;
   affichageIcones = true;
-  elem="$element"
+  elem="$element";
 
   constructor(private service: SongkickService, private router: Router, private locService: LocationService,  ) {
     this.type = 'artist';
@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
   scrollToContent(elem): void {
     let mediaWidth=window.matchMedia("(min-width: 769px)");
     if (mediaWidth.matches){
-      setTimeout(() => window.scrollTo({top:275, behavior : 'smooth'}), 500);
+      setTimeout(() => window.scrollTo({top:100, behavior : 'smooth'}), 500);
     }
     else {setTimeout(() => window.scrollTo({top:20, behavior : 'smooth'}), 500);}
   }
@@ -96,11 +96,12 @@ export class AppComponent implements OnInit {
    @HostListener('window:scroll', [])
    onWindowScroll() {
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (number > 255 && this.screenSize > 768 ) {
+    if (number > 190 && this.screenSize > 768 ) {
       this.isScrolled = true;
-    } else if (number < 255) {
+    } else if (number < 190 && this.screenSize > 768) {
       this.isScrolled = false;
     }
+
   }
 
 
@@ -127,7 +128,13 @@ export class AppComponent implements OnInit {
       navigator.geolocation.getCurrentPosition(this.displayLocationInfo);
     }
     this.screenSize = window.innerWidth ;
+    let mediaWidth=window.matchMedia("(max-width: 768px)");
+    if (mediaWidth.matches){
+      this.affichageIcones=false;
+    }
+    else {this.affichageIcones=true}
   }
+
   ngDoCheck() {
     if (this.geoLoc === true) {
     this.getGeolocalisation();

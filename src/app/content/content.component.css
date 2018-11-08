@@ -1,14 +1,23 @@
 
+@media screen and (max-width: 768px) {
+  .dropdown-toggle {
+    -webkit-appearance: none;
+    background: rgb(39, 39, 39) url("../../assets/img/drop-down-arrow.png") right 5% top 50% no-repeat;
+  }
+}
+@media screen and (min-width: 769px){
+  .dropdown-toggle {
+    -webkit-appearance: none;
+  background: #fff url("../../assets/img/drop-down-arrow.png") right 5% top 50% no-repeat;
+  }
+}
+
 .buttonOption {
-  background-color: rgb(39, 39, 39);
   color: #ff471a;
   width: 12vw;
   min-width: 180px;
 }
-.dropdown-toggle{
-  -webkit-appearance: none;
-  background: rgb(39, 39, 39) url("../../assets/img/drop-down-arrow.png") right 5% top 50% no-repeat;
-}
+
 
 img {
   width: 40px;
@@ -24,10 +33,18 @@ img {
 }
 
 .datesort {
-  margin-left: 70%;
+  margin-bottom:7px;
 }
 .event {
   max-height: 100vh;
   overflow: scroll;
   overflow-x: hidden;
+}
+
+.align-middle {
+  margin-top:50%;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
 }

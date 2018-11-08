@@ -1,44 +1,28 @@
-/* 
-@media screen and (max-width: 910px) {
-  .content {
-  margin-right: 2%;
-  margin-left: 2%;
-  width: 96%;
+
+@media screen and (max-width: 768px) {
+  .dropdown-toggle {
+    -webkit-appearance: none;
+    background: rgb(39, 39, 39) url("../../assets/img/drop-down-arrow.png") right 5% top 50% no-repeat;
   }
 }
-
+@media screen and (min-width: 769px){
+  .dropdown-toggle {
+    -webkit-appearance: none;
+  background: #fff url("../../assets/img/drop-down-arrow.png") right 5% top 50% no-repeat;
+  }
+}
 .buttonOption {
-  background-color: rgb(39, 39, 39);
   color: #ff471a;
   width: 12vw;
   min-width: 180px;
 }
-.dropdown-toggle{
-  -webkit-appearance: none;
-  background: rgb(39, 39, 39) url("../../assets/img/drop-down-arrow.png") right 5% top 50% no-repeat;
+
+.event {
+  max-height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
 }
-
-img {
-  width: 40px;
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
-.box{
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-
-
-.content {
-  background-color: #fcfcfc;
-  width: 100%;
-  max-width: 900px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 10px;
-  margin-top:2%;
-
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-
-} */

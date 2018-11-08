@@ -1,6 +1,6 @@
-
+<a class="btn btn-danger d-block d-sm-none" role="button" (click)="collapse()">{{ openMap }}</a>
  <div id="carte" class="carte"><!--affichage de la carte + positionnement du centre de la carte(à faire: un algo pour prendre moyenne pondérée des marqueurs)-->
-<agm-map [streetViewControl]="false" [latitude]="lat" [longitude]="lng">
+<agm-map *ngIf="show" [streetViewControl]="false" [latitude]="lat" [longitude]="lng">
   <!--affichage et positionnement de marqueurs. A boucler.-->
   <agm-marker [longitude]="lng" [latitude]="lat">
 	  <agm-info-window [isOpen]="true">

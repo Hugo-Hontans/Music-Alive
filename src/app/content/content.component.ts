@@ -23,6 +23,7 @@ export class ContentComponent implements OnInit {
   mm=this.today.getMonth()+1;
   yyyy=this.today.getFullYear();
   event;
+  
 
 
 
@@ -164,5 +165,7 @@ export class ContentComponent implements OnInit {
     })
   }
 
+  ngOnChanges(){
+  }
 
 }

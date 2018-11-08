@@ -17,6 +17,21 @@ a{
   color :#ff471a;
 }
 
+.col-md-6 {
+  max-width:46vw;
+  max-height:46vh;
+}
+
+.col-12 {
+  max-width:23vw;
+  max-height:23vh;
+}
+
+.contenuartist {
+  max-width: 26vw;
+  max-height:26vh;
+}
+
 
 .btn-danger {
   opacity: 1;

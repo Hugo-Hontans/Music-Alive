@@ -1,6 +1,5 @@
 .list-group {
   max-width: 900px;
-  width: 90%;
   margin: auto;
 }
 
@@ -15,5 +14,14 @@
   -webkit-border-radius: 6px;
   border-radius: 6px;
   margin-bottom: 10px;
+  min-width:47vw;
+  margin-left:1vw;
+}
 
+@media screen and (max-width: 768px) {
+  .shad {
+    margin:auto;
+    margin-bottom:4px;
+    width:96vw;
+  }
 }

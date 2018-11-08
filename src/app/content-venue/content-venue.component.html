@@ -1,9 +1,14 @@
 <div class="content">
+<div class="row content d-flex justify-content-center">
+<div class="row col-md-6 col-12 desc d-flex justify-content-center">
 	<app-venue-page *ngIf="affichage==true" [objetVenue]="objetVenue" ></app-venue-page>
 	<br>
 	<app-cartemapvenue *ngIf="affichage==true" [objetVenue]="objetVenue"></app-cartemapvenue>
 	<br>
-	<div class=" box container-4">
+</div>
+
+<div class="row col-md-6 col-12 event d-flex justify-content-center">
+	<div class="box container-4">
       <img src="../../assets/img/calendar.png" alt="logo calendar">
       <select class="buttonOption btn dropdown-toggle" ngModel [(ngModel)]="event" (ngModelChange)="searchEventsOfVenue($event)">
           <option class="option" value="anytime"><button></button>Anytime</option>
@@ -16,4 +21,10 @@
   	</div>
   	<app-eventlist *ngIf="affichage2==true" [objetTest]="objetEventsOfVenue"></app-eventlist>
     <p *ngIf="affichage2==false" class="text-center">We didn't find any event in this place.</p>
+</div>
+
+</div>
+
+
+
 </div>

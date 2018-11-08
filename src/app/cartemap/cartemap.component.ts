@@ -12,15 +12,24 @@ export class CartemapComponent implements OnInit {
   @Input() objetTest;
   index;
   @Input() affichageTitrePourLocation;
-
-  //donner des positions; les variables sont à lire dans "[longitude]" et "[latitude]"
-  //dans l'HTML afin de donner des positions sur la carte
   lat: number;
   lng: number;
   isOpenBoolean:boolean[];
-
+  show=true;
+  openMap = "Open map";
   constructor(private findindexservice : FindIndexService) {}
 
+  collapse(){
+    ;
+    if (this.show==true){
+      this.show=false;
+      this.openMap = "Open map";
+    }
+    else {
+      this.show=true;
+      this.openMap = "Close map";
+    }
+  }
   scrollTo() {
       let element = document.getElementById("carte");
       element.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
@@ -28,6 +37,10 @@ export class CartemapComponent implements OnInit {
 
 
   ngOnInit(){
+     let mediaWidth=window.matchMedia("(max-width: 768px)");
+    if (mediaWidth.matches){
+      this.show=false;
+    }
   }
   ngOnChanges(){
     this.lng = this.objetTest.resultsPage.results.event[0].venue.lng;
