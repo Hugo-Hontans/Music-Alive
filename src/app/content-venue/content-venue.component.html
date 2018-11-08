@@ -4,7 +4,8 @@
 	<app-cartemapvenue *ngIf="affichage==true" [objetVenue]="objetVenue"></app-cartemapvenue>
 	<br>
 	<div class=" box container-4">
-      <select ngModel [(ngModel)]="event" (ngModelChange)="searchEventsOfVenue($event)">
+      <img src="../../assets/img/calendar.png" alt="logo calendar">
+      <select class="buttonOption btn dropdown-toggle" ngModel [(ngModel)]="event" (ngModelChange)="searchEventsOfVenue($event)">
           <option class="option" value="anytime"><button></button>Anytime</option>
           <option class="option" value="today">Today</option>
           <option class="option" value="tomorrow">Tomorrow</option>

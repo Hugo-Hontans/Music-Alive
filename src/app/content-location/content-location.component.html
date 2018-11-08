@@ -2,7 +2,8 @@
   <app-cartemap *ngIf="affichage==true" [objetTest]="objetTest" [affichageTitrePourLocation]="affichageTitrePourLocation"></app-cartemap>
   <br>
   <div class=" box container-4">
-      <select ngModel [(ngModel)]="event" (ngModelChange)="search($event)">
+      <img src="../../assets/img/calendar.png" alt="logo calendar">
+      <select class="buttonOption btn dropdown-toggle" ngModel [(ngModel)]="event" (ngModelChange)="search($event)">
           <option class="option" value="anytime"><button></button>Anytime</option>
           <option class="option" value="today">Today</option>
           <option class="option" value="tomorrow">Tomorrow</option>
