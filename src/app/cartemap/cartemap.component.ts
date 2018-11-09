@@ -20,12 +20,13 @@ export class CartemapComponent implements OnInit {
   constructor(private findindexservice : FindIndexService) {}
 
   collapse(){
-    ;
     if (this.show==true){
       this.show=false;
       this.openMap = "Open map";
+      this.findindexservice.showScrollMapButton=true;
     }
     else {
+      this.findindexservice.showScrollMapButton=false;
       this.show=true;
       this.openMap = "Close map";
     }
@@ -40,6 +41,7 @@ export class CartemapComponent implements OnInit {
      let mediaWidth=window.matchMedia("(max-width: 768px)");
     if (mediaWidth.matches){
       this.show=false;
+      this.findindexservice.showScrollMapButton=true;
     }
   }
   ngOnChanges(){

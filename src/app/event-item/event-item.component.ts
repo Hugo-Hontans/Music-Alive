@@ -12,8 +12,9 @@ export class EventItemComponent implements OnInit {
   @Input()
   oneEvent;
   @Input() index;
-
   constructor(private findindexservice : FindIndexService) {}
+
+  showScrollMapButt
 
 
   indexOfEvents(){
@@ -23,5 +24,14 @@ export class EventItemComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  ngDoCheck(){
+    if (this.findindexservice.showScrollMapButton==true){
+      this.showScrollMapButt=false;
+    }
+    else {
+      this.showScrollMapButt=true;
+    }
   }
 }

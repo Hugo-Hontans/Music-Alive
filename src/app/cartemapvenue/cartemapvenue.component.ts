@@ -21,10 +21,12 @@ export class CartemapvenueComponent implements OnInit {
   constructor(private findindexservice : FindIndexService) {}
   collapse(){
     if (this.show==true){
+      this.findindexservice.showScrollMapButton=true;
       this.show=false;
       this.openMap = "Open map";
     }
     else {
+      this.findindexservice.showScrollMapButton=false;
       this.show=true;
       this.openMap = "Close map";
     }
