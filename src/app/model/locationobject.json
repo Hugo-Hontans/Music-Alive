@@ -1,0 +1,47 @@
+// https://www.songkick.com/developer/location-search#location
+{
+  "resultsPage": {
+    "results": {
+      "location": [
+        {
+          "city": {
+            "displayName": "London",
+            "country": { "displayName": "UK" },
+            "lng": -0.128,
+            "lat": 51.5078
+          },
+          "metroArea": {
+            "id": 24426,
+            "uri": "http://www.songkick.com/metro_areas/24426-uk-london",
+            "displayName": "London",
+            "country": { "displayName": "UK" },
+            "lng": -0.128,
+            "lat": 51.5078
+          }
+        },
+        {
+          "city": {
+            "displayName": "London",
+            "country": { "displayName": "US" },
+            "lng": null,
+            "lat": null,
+            "state": { "displayName": "KY" }
+          },
+          "metroArea": {
+            "id": 24580,
+            "uri": "http://www.songkick.com/metro_areas/24580",
+            "displayName": "Lexington",
+            "country": { "displayName": "US" },
+            "lng": -84.4947,
+            "lat": 38.0297,
+            "state": { "displayName": "KY" }
+          }
+        }
+      ]
+    },
+    "totalEntries": 2,
+    "perPage": 10,
+    "page": 1,
+    "status": "ok"
+  }
+}

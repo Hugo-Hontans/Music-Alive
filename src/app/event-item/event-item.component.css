@@ -1,0 +1,43 @@
+#moredetails {
+  text-align: right;
+}
+.textsize {
+  font-size: 1.3em;
+}
+
+.bord {
+  border: none;
+  height: 100%;
+  min-height:150px;
+}
+
+.markerbtn{
+  float:right;
+  margin-top: 2px;
+}
+
+@media screen and (max-width: 768px){
+  .markerbtn {
+    float:right;
+    margin-top:40px;
+  }
+}
+
+.btn-orange {
+  border: 1px solid #ff571a;
+}
+
+.btn-orange:hover {
+  background-color: #ff571a;
+  color:white;
+}
+
+.tailleimg{
+  width:45px;
+  height:45px;
+  border-radius: 30px;
+}
+
+a {
+  color:#ff571a;
+}

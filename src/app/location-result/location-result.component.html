@@ -1,0 +1,17 @@
+<!-- <div *ngFor="let l of objetLocation.resultsPage.results.location">
+  <div>
+    <h2>nom de la ville : {{ l.city.displayName }}</h2>
+    <h6 class="text">Country {{ l.country }}</h6>
+  </div>
+</div> -->
+
+<div *ngIf="affichage==true" class="container">
+  <div class="row">
+    <div *ngFor="let l of objetLocation.resultsPage.results.location" class="card mb-6 col-lg-3 col-sm-6 col-6 " style="max-width: 18rem;">
+      <div class="card-body text-info">
+        <h5 class="card-title"><a routerLink="../../locationcontent/{{ l.metroArea.id }}">{{ l.city.displayName }}</a>,</h5>
+          <h6>{{ l.city.country.displayName }}</h6>
+      </div>
+    </div>
+  </div>
+</div>

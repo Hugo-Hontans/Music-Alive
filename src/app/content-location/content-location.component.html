@@ -1,0 +1,26 @@
+<div class="content">
+  <div class="row content d-flex justify-content-center">
+
+<div class="row col-md-6 col-12 desc d-flex justify-content-center ">
+  <h1 *ngIf="affichage==true" class="text-center">All the concerts in {{ objetTest.resultsPage.results.event[0].location.city }}</h1>
+  <app-cartemap class="map" *ngIf="affichage==true" [objetTest]="objetTest" [affichageTitrePourLocation]="affichageTitrePourLocation"></app-cartemap>
+  <br>
+</div>
+
+<div class="row col-md-6 col-12 event d-flex justify-content-center">
+
+  <div class=" box container-4">
+      <select class="buttonOption btn dropdown-toggle" ngModel [(ngModel)]="event" (ngModelChange)="search($event)">
+          <option class="option" value="anytime"><button></button>Anytime</option>
+          <option class="option" value="today">Today</option>
+          <option class="option" value="tomorrow">Tomorrow</option>
+          <option class="option" value="thisWeek">This week</option>
+          <option class="option" value="thisMonth" >This Month</option>
+          <option class="option" value="next3Months" >Next 3 months</option>
+        </select>
+  </div>
+  <app-eventlist *ngIf="affichage==true" [objetTest]="objetTest"></app-eventlist>
+  <p *ngIf="affichage==false" class="text-center">We didn't find any event in this city.</p>
+</div>
+</div>
+</div>

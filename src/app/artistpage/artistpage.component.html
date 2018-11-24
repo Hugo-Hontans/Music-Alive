@@ -1,0 +1,23 @@
+<div *ngIf="errorMessage==null" class="text-center background">
+  <div class="">
+          <img class="col-4" src="{{ image }}" alt="No artist photo">
+    <span class="">
+      <h1 class="">{{ name }}</h1>
+      <button [ngClass]="{
+      'btn-danger': affichage == false,
+      'btn-success': affichage == true
+    }" class="btn disabled col-6 col-md-3">{{
+        affichageOnTour }}</button>
+      <p class="">{{ summary }}</p>
+      <ul>Similar artists :
+        <span *ngIf="similarArtist.length==0 || similarArtist[0].text==''">
+           No similar artist were found.
+        </span>
+        <li *ngFor="let artist of similarArtist">
+          <a class="similarLi" routerLink="../../artistcontent/{{ artist.name }}">{{ artist.name }}</a>
+        </li>
+      </ul>
+    </span>
+  </div>
+</div>
+<div id="errorMessage" class="" *ngIf="errorMessage!=null">{{ errorMessage }}</div>

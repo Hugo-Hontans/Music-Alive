@@ -1,0 +1,75 @@
+{
+  "results": {
+    "opensearch:Query": {
+      "#text": "",
+      "role": "request",
+      "searchTerms": "bedouine",
+      "startPage": "1"
+    },
+    "opensearch:totalResults": "3",
+    "opensearch:startIndex": "0",
+    "opensearch:itemsPerPage": "30",
+    "artistmatches": {
+      "artist": [
+        {
+          "name": "Bedouine",
+          "listeners": "25958",
+          "mbid": "",
+          "url": "https://www.last.fm/music/Bedouine",
+          "streamable": "0",
+          "image": [
+            {
+              "#text": "https://lastfm-img2.akamaized.net/i/u/34s/b8ba25c398524efa04ce36aee8c2c9a3.png",
+              "size": "small"
+            },
+            {
+              "#text": "https://lastfm-img2.akamaized.net/i/u/64s/b8ba25c398524efa04ce36aee8c2c9a3.png",
+              "size": "medium"
+            },
+            {
+              "#text": "https://lastfm-img2.akamaized.net/i/u/174s/b8ba25c398524efa04ce36aee8c2c9a3.png",
+              "size": "large"
+            },
+            {
+              "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/b8ba25c398524efa04ce36aee8c2c9a3.png",
+              "size": "extralarge"
+            },
+            {
+              "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/b8ba25c398524efa04ce36aee8c2c9a3.png",
+              "size": "mega"
+            }
+          ]
+        },
+        {
+          "name": "BEDOUINE BACK TO YOU",
+          "listeners": "1",
+          "mbid": "",
+          "url": "https://www.last.fm/music/BEDOUINE+BACK+TO+YOU",
+          "streamable": "0",
+          "image": [
+            { "#text": "", "size": "small" },
+            { "#text": "", "size": "medium" },
+            { "#text": "", "size": "large" },
+            { "#text": "", "size": "extralarge" },
+            { "#text": "", "size": "mega" }
+          ]
+        },
+        {
+          "name": "Bedouine Sound Clash",
+          "listeners": "1",
+          "mbid": "",
+          "url": "https://www.last.fm/music/Bedouine+Sound+Clash",
+          "streamable": "0",
+          "image": [
+            { "#text": "", "size": "small" },
+            { "#text": "", "size": "medium" },
+            { "#text": "", "size": "large" },
+            { "#text": "", "size": "extralarge" },
+            { "#text": "", "size": "mega" }
+          ]
+        }
+      ]
+    },
+    "@attr": { "for": "bedouine" }
+  }
+}

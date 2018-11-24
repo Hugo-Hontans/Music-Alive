@@ -1,0 +1,32 @@
+.window{
+    width:200px;
+    line-height: 1.8;
+    color: black;
+}
+
+.btnmarker {
+    margin-left:37%;    
+}
+
+.gm-style-iw{
+    top:16px;
+}
+
+a {
+    color: #ff571a;
+}
+
+.btn-orange {
+    border: 1px solid #ff571a;
+    background-color:#ff571a;
+    color: white;
+  }
+  
+.btn-orange:hover {
+    background-color: #ff6f1a;
+  }
+
+.downing {
+    margin-left:4px;
+    width:12px;
+}

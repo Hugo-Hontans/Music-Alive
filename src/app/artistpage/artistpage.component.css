@@ -1,0 +1,47 @@
+.container{
+
+  height: 48vh;
+  margin-bottom: 4vh
+}
+.background{
+  background: #37474F;
+}
+li{
+	display: inline;
+}
+#errorMessage{
+	margin-top: 30px;
+}
+.similarLi {
+  margin-right: 10px;
+}
+a{
+  color :#ff471a;
+}
+
+.col-md-6 {
+  max-width:46vw;
+  max-height:46vh;
+}
+
+.col-12 {
+  max-width:23vw;
+  max-height:23vh;
+}
+
+.contenuartist {
+  max-width: 26vw;
+  max-height:26vh;
+}
+
+
+.btn-danger {
+  opacity: 1;
+  background-color: #cc0505;
+  margin-bottom: 8px;
+}
+.btn-success {
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+

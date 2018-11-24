@@ -1,0 +1,15 @@
+
+  .homemessage {
+    margin-top: 4%;
+    color: #FF471A;
+    font-family: 'Disco';
+    text-shadow: 1px 1px 5px rgb(255, 151, 16);
+  }
+  
+  .letters {
+    font-size: 3.5vw;
+  } 
+
+  .monsterconcert {
+    width: 70%;
+    height: 40%;  }

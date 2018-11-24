@@ -1,0 +1,7 @@
+<a class="btn btn-danger d-block d-lg-none" role="button" (click)="collapse()">{{ openMap }}</a>
+<div *ngIf="show" id="carte" class="carte"><!--affichage de la carte + positionnement du centre de la carte(à faire: un algo pour prendre moyenne pondérée des marqueurs)-->
+	<agm-map [streetViewControl]="false" [latitude]="lat" [longitude]="lng" [zoom]="13">
+	  <!--affichage et positionnement de marqueurs. A boucler.-->
+	<app-mapmarkers *ngFor="let oneEvent of objetTest.resultsPage.results.event; let i=index" [index]="i" [oneEvent]="oneEvent"></app-mapmarkers>
+	</agm-map>
+</div>

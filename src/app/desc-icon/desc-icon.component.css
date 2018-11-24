@@ -1,0 +1,38 @@
+.finddesc {
+    padding: 50px;
+}
+
+img {
+    width: 65px;
+    margin-bottom: 10px;
+}
+
+.pink {
+    opacity:1;
+}
+
+.desccard {
+    text-align: center;
+    border: 1px #fff;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+/* .desctext {
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    box-shadow: 1px 1px 3px 1px #656565;
+    border-radius: 7px;
+    height: 160px;
+    padding: 15px;
+} */
+
+.desctext p {
+    color: grey;
+}
+
+.desctext h5 {
+    font-weight: bold;
+}

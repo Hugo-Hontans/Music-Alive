@@ -1,0 +1,35 @@
+<a *ngIf="show==true" (click)="booleanMenu()" routerLink="locationcontent/{{objetLoc}}"><img class="logo" src="../../assets/img/logo.png"></a>
+<a *ngIf="show==false" (click)="booleanMenu()" routerLink=""><img class="logo" src="../../assets/img/logo.png"></a>
+<img (click)="scrollToElement(target)" class="imghaut d-none d-md-block" src="../assets/img/arrow.png" alt="arrow image">
+
+<div #target>
+    <!-- div vide pour la remontée de la flèche -->
+</div>
+
+  <app-homemessage></app-homemessage>
+
+<div [@scrolledNotScrolled]=" isScrolled ? 'scrolled' : 'notscrolled'" class="toc" >
+<div class=" box container-4">
+    <form class="form searchbar" (ngSubmit)="search(f)" #f="ngForm">
+      <select class="select" name="type" [(ngModel)]="type">
+        <option class="option" value="artist" >artist</option>
+        <option class="option" value="venue">venue</option>
+        <option class="option" value="location">location</option>
+      </select>
+    <input type="search" id="search" #searchValue placeholder="Search for events" name="searchValue" ngModel required/>
+    <button type="submit" [disabled]="f.invalid" (click)="searchValue.value=''" class="icon"><i class="fa fa-search"></i></button>
+  </form>
+</div>
+</div>
+
+
+<app-desc-icon *ngIf="affichageIcones"></app-desc-icon>
+<div #content class='content'>
+  <router-outlet></router-outlet>
+
+  
+</div>
+<app-footer></app-footer>
+
+
+

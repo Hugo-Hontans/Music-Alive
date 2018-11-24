@@ -1,0 +1,33 @@
+{
+  "resultsPage": {
+    "status": "ok",
+    "results": {
+      "artist": [
+        {
+          "id": 1061208,
+          "displayName": "Nils Frahm",
+          "uri": "http://www.songkick.com/artists/1061208-nils-frahm?utm_source=51137&utm_medium=partner",
+          "identifier": [
+            {
+              "mbid": "d03a54bc-6e07-4c04-a8d4-7fbf2bd07a01",
+              "href": "http://api.songkick.com/api/3.0/artists/mbid:d03a54bc-6e07-4c04-a8d4-7fbf2bd07a01.json",
+              "eventsHref": "http://api.songkick.com/api/3.0/artists/mbid:d03a54bc-6e07-4c04-a8d4-7fbf2bd07a01/calendar.json",
+              "setlistsHref": "http://api.songkick.com/api/3.0/artists/mbid:d03a54bc-6e07-4c04-a8d4-7fbf2bd07a01/setlists.json"
+            }
+          ],
+          "onTourUntil": "2019-04-13"
+        },
+        {
+          "identifier": [],
+          "uri": "http://www.songkick.com/artists/4253221-nils-frahm-and-anne-muller?utm_source=51137&utm_medium=partner",
+          "displayName": "Nils Frahm & Anne Müller",
+          "id": 4253221,
+          "onTourUntil": null
+        }
+      ]
+    },
+    "perPage": 50,
+    "page": 1,
+    "totalEntries": 2
+  }
+}

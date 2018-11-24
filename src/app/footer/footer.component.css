@@ -1,0 +1,37 @@
+.dark {
+    background-color: #263238;
+    color: white;
+    margin-top:10px;
+}
+
+.socialimg {
+    width: 35px;
+    margin: 0 4px 0 2px;
+}
+
+.footer-copyright {
+    background-color: rgb(39, 39, 39);
+}
+
+a {
+    color: white;
+}
+
+h4 {
+    color: rgb(156, 156, 156)
+}
+
+.text-uppercase {
+    color: #FF471A;
+    text-align: start;
+}
+
+.list-unstyled {
+    text-align: start;
+}
+
+@media screen and (max-width: 768px) {
+    .col-md-3 {
+    margin-left:12vw;
+}
+}
